@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
-.active {
-  background: blue;
+.route-wrapper {
+  position: relative;
+}
+
+.route-wrapper > div {
+  position: absolute;
 }

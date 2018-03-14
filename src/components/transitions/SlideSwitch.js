@@ -33,7 +33,7 @@ const bounceTransition = {
   }
 };
 
-export default ({ children }) => (
+const SlideSwitch = ({ children }) => (
   <AnimatedSwitch
     atEnter={bounceTransition.atEnter}
     atLeave={bounceTransition.atLeave}
@@ -44,3 +44,5 @@ export default ({ children }) => (
     {children}
   </AnimatedSwitch>
 );
+
+export default SlideSwitch;

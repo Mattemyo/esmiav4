@@ -9,8 +9,6 @@ import {
   Sidebar,
   Icon
 } from 'semantic-ui-react';
-import MainHeading from './headings/MainHeading';
-
 import DesktopContainer from './containers/DesktopContainer';
 import MobileContainer from './containers/MobileContainer';
 

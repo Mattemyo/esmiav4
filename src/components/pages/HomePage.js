@@ -14,6 +14,7 @@ import {
   Sidebar,
   Visibility
 } from 'semantic-ui-react';
+import MainHeading from '../headings/MainHeading';
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -21,7 +22,8 @@ import {
  */
 
 const Homepage = () => (
-  <div>
+  <div style={{ width: '100vw' }}>
+    <MainHeading />
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
