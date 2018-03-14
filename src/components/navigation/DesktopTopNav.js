@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import { Visibility, Segment, Menu, Container, Button } from 'semantic-ui-react';
 import MainHeading from '../headings/MainHeading';
+import { NavLink } from 'react-router-dom';
 
 const DesktopTopNav = ({ showFixedMenu, hideFixedMenu, fixed, location }) => (
   <Visibility once={false} onBottomPassed={showFixedMenu} onBottomPassedReverse={hideFixedMenu}>
@@ -14,12 +15,18 @@ const DesktopTopNav = ({ showFixedMenu, hideFixedMenu, fixed, location }) => (
         size="large"
       >
         <Container>
-          <Menu.Item as="a" active={location.pathname === '/home'}>
-            Home
+          <Menu.Item active={location.pathname === '/home'}>
+            <NavLink to="/">Hem</NavLink>
           </Menu.Item>
-          <Menu.Item as="a">Work</Menu.Item>
-          <Menu.Item as="a">Company</Menu.Item>
-          <Menu.Item as="a">Careers</Menu.Item>
+          <Menu.Item active={location.pathname === '/products'}>
+            <NavLink to="/products">Produkter</NavLink>
+          </Menu.Item>
+          <Menu.Item active={location.pathname === '/about'}>
+            <NavLink to="/">Om</NavLink>
+          </Menu.Item>
+          <Menu.Item active={location.pathname === '/contact'}>
+            <NavLink to="/">Kontakt</NavLink>
+          </Menu.Item>
         </Container>
       </Menu>
       <MainHeading />
