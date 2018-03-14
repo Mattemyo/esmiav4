@@ -22,7 +22,7 @@ import MainHeading from '../headings/MainHeading';
  */
 
 const Homepage = () => (
-  <div style={{ width: '100vw' }}>
+  <div className="page">
     <MainHeading />
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Grid container stackable verticalAlign="middle">

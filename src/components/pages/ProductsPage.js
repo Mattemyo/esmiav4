@@ -2,7 +2,7 @@ import React from 'react';
 import MainHeading from '../headings/MainHeading';
 
 const ProductsPage = () => (
-  <div style={{ width: '100vw' }}>
+  <div className="page">
     <MainHeading />
     Products
   </div>
