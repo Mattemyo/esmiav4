@@ -10,7 +10,12 @@ import { getHeaderAttributes } from '../../utils/db';
 const MainHeading = ({ mobile }) => {
   const { bigHeader, smallHeader, buttonText } = getHeaderAttributes(window.location.href);
   return (
-    <Segment inverted textAlign="center" style={{ minHeight: 700, padding: '1em 0em' }} vertical>
+    <Segment
+      inverted
+      textAlign="center"
+      style={{ minHeight: mobile ? 350 : 700, padding: '1em 0em' }}
+      vertical
+    >
       <Container text>
         <Header
           as="h1"

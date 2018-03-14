@@ -15,6 +15,7 @@ import {
   Visibility
 } from 'semantic-ui-react';
 import MainHeading from '../headings/MainHeading';
+import Footer from '../Footer';
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -110,6 +111,7 @@ const Homepage = () => (
         </Button>
       </Container>
     </Segment>
+    <Footer />
   </div>
 );
 
