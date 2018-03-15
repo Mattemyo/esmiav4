@@ -23,7 +23,6 @@ const MainHeading = ({ mobile, bigHeader, smallHeader, buttonText, image }) => (
         minWidth: '100vw',
         minHeight: '150vh',
         position: 'absolute',
-        opacity: 0.3,
         top: 0,
         zIndex: -10,
         backgroundImage: `url(${image})`,
