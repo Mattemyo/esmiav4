@@ -18,13 +18,13 @@ class MobileContainer extends Component {
     const { sidebarOpened } = this.state;
 
     return (
-      <Responsive {...Responsive.onlyMobile} >
+      <Responsive {...Responsive.onlyMobile}>
         <Sidebar.Pushable>
           <MobileSideNav sidebarOpened={sidebarOpened} />
           <Sidebar.Pusher
             dimmed={sidebarOpened}
             onClick={this.handlePusherClick}
-            style={{ minHeight: '100em' }}
+            style={{ minHeight: '600vh' }}
           >
             <Segment inverted textAlign="center" style={{ padding: '1em 0em' }} vertical>
               <Container>

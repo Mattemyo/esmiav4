@@ -18,15 +18,20 @@ const MainHeading = ({ mobile, bigHeader, smallHeader, buttonText, image }) => (
     }}
     vertical
   >
-  
-    <Image
-      src={image}
+    <Segment
       style={{
+        minWidth: '100vw',
+        minHeight: '150vh',
         position: 'absolute',
         opacity: 0.3,
         top: 0,
         zIndex: -10,
-        minWidth: '1500px'
+        backgroundImage: `url(${image})`,
+        backgroundPosition: '50% 80%',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        opacity: 0.5,
+        overflow: 'hidden !important'
       }}
     />
     <Container text>

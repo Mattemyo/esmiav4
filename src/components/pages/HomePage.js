@@ -59,7 +59,13 @@ const Homepage = () => (
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
-            <Image bordered rounded size="large" src="/assets/images/wireframe/white-image.png" />
+            <Image
+              bordered
+              rounded
+              size="large"
+              src="/assets/images/wireframe/white-image.png"
+              alt="fin bild"
+            />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -80,7 +86,7 @@ const Homepage = () => (
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as="h3" style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
+              "Ett till citat har"
             </Header>
             <p style={{ fontSize: '1.33em' }}>
               <Image avatar src="/assets/images/avatar/large/nan.jpg" alt="fin bild" />
@@ -93,15 +99,17 @@ const Homepage = () => (
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header as="h3" style={{ fontSize: '2em' }}>
-          Breaking The Grid, Grabs Your Attention
+          Det bästa urvalet från Medelhavet
         </Header>
         <p style={{ fontSize: '1.33em' }}>
-          Instead of focusing on content creation and hard work, we have learned how to master the
-          art of doing nothing by providing massive amounts of whitespace and generic content that
-          can seem massive, monolithic and worth your attention.
+          Bacon ipsum dolor amet ribeye kevin pancetta capicola strip steak venison. Picanha ribeye
+          porchetta shoulder spare ribs tail chuck. Salami leberkas chicken kielbasa short ribs,
+          capicola pancetta. Turducken pastrami alcatra capicola frankfurter ground round ball tip
+          pork loin tail jerky landjaeger doner fatback. Burgdoggen tail strip steak, frankfurter
+          pancetta ball tip fatback venison porchetta cow.
         </p>
         <Button as="a" size="large">
-          Read More
+          Läs mer
         </Button>
         <Divider
           as="h4"
@@ -109,18 +117,14 @@ const Homepage = () => (
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a href="#">Case Studies</a>
+          <a href="#">Mer info</a>
         </Divider>
         <Header as="h3" style={{ fontSize: '2em' }}>
-          Did We Tell You About Our Bananas?
+          Gillar du mat?
         </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-          it's really true. It took years of gene splicing and combinatory DNA research, but our
-          bananas can really dance.
-        </p>
+        <p style={{ fontSize: '1.33em' }}>lorem mat mat mat mums</p>
         <Button as="a" size="large">
-          I'm Still Quite Interested
+          Ta mig dit
         </Button>
       </Container>
     </Segment>

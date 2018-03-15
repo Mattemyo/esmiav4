@@ -7,11 +7,10 @@ body {
 }
 
 body div.page {
-  background: white;
+  background: white !important;
   z-index: 50;
   opacity: 1;
 }
-
 
 .route-wrapper {
   position: relative;
