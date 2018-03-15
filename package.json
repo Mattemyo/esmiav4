@@ -1,6 +1,7 @@
 {
   "name": "packing_list_app",
   "version": "0.1.0",
+  "homepage": "http://mattemyo.github.io/esmiav3", 
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
