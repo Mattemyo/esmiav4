@@ -8,6 +8,7 @@ body {
 
 body div.page {
   background: white !important;
+  width: 100vw !important;
   z-index: 50;
   opacity: 1;
 }
