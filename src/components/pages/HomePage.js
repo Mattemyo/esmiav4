@@ -16,6 +16,8 @@ import {
 } from 'semantic-ui-react';
 import MainHeading from '../headings/MainHeading';
 import Footer from '../Footer';
+import norbertoPaellas from '../../images/norbertoPaellas.JPG';
+import maricoPaella2 from '../../images/maricoPaella2.jpg';
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -24,8 +26,19 @@ import Footer from '../Footer';
 
 const Homepage = () => (
   <div className="page">
-    <MainHeading />
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <MainHeading
+      bigHeader={'Välkommen till Esmia HB'}
+      smallHeader={'Vi säljer produkter'}
+      buttonText={'Se produkter'}
+      image={maricoPaella2}
+    />
+    <Segment
+      style={{
+        padding: '8em 0em',
+        background: 'white'
+      }}
+      vertical
+    >
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
           <Grid.Column width={8}>
@@ -61,17 +74,17 @@ const Homepage = () => (
         <Grid.Row textAlign="center">
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as="h3" style={{ fontSize: '2em' }}>
-              "What a Company"
+              "Fint citat här"
             </Header>
-            <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
+            <p style={{ fontSize: '1.33em' }}>Denna webbsida är under utveckling</p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <Header as="h3" style={{ fontSize: '2em' }}>
               "I shouldn't have gone with their competitor."
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src="/assets/images/avatar/large/nan.jpg" />
-              <b>Nan</b> Chief Fun Officer Acme Toys
+              <Image avatar src="/assets/images/avatar/large/nan.jpg" alt="fin bild" />
+              Someone
             </p>
           </Grid.Column>
         </Grid.Row>

@@ -8,7 +8,10 @@ body {
 
 body div.page {
   background: white;
+  z-index: 50;
+  opacity: 1;
 }
+
 
 .route-wrapper {
   position: relative;

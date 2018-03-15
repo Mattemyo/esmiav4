@@ -4,7 +4,11 @@ import Footer from '../Footer';
 
 const ProductsPage = () => (
   <div className="page">
-    <MainHeading />
+    <MainHeading
+      bigHeader={'Våra produkter'}
+      smallHeader={'Lorem, lorem, lorem'}
+      buttonText={''}
+    />
     Products
     <Footer />
   </div>

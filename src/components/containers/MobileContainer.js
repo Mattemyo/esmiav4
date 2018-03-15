@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Responsive, Sidebar, Segment, Menu, Icon, Container } from 'semantic-ui-react';
 import MobileSideNav from '../navigation/MobileSideNav';
-import MainHeading from '../headings/MainHeading';
 
 class MobileContainer extends Component {
   state = {};

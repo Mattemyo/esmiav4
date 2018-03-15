@@ -12,7 +12,7 @@ class DesktopContainer extends Component {
     const { hideFixedMenu, showFixedMenu, props: { children }, state: { fixed } } = this;
 
     return (
-      <Responsive {...Responsive.onlyComputer}>
+      <Responsive minWidth={768}>
         <Visibility
           once={false}
           onBottomPassed={showFixedMenu}
