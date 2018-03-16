@@ -6,33 +6,16 @@ import { withRouter } from 'react-router';
  * such things.
  */
 
-const MainHeading = ({ mobile, bigHeader, smallHeader, buttonText, image }) => (
+const MainHeading = ({ mobile, bigHeader, smallHeader, buttonText }) => (
   <Segment
-    inverted
     textAlign="center"
     style={{
       minHeight: mobile ? 350 : 700,
       padding: '1em 0em',
-      backgroundColor: 'black',
-      opacity: 0.9
+      background: 'rgba(0, 0, 0, 0.6)'
     }}
     vertical
   >
-    <Segment
-      style={{
-        minWidth: '100vw',
-        minHeight: '150vh',
-        position: 'absolute',
-        top: 0,
-        zIndex: -10,
-        backgroundImage: `url(${image})`,
-        backgroundPosition: '50% 80%',
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed',
-        opacity: 0.5,
-        overflow: 'hidden !important'
-      }}
-    />
     <Container text>
       <Header
         as="h1"

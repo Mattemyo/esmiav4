@@ -2,14 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: black;
-}
-
-body div.page {
-  background: white !important;
-  width: 100vw !important;
-  z-index: 50;
-  opacity: 1;
 }
 
 .route-wrapper {
