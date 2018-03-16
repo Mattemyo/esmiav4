@@ -25,7 +25,7 @@ import maricoPaella2 from '../../images/maricoPaella2.jpg';
  */
 
 const Homepage = () => (
-  <div className="page">
+  <div className="page" style={{ background: 'white', zIndex: 60 }}>
     <MainHeading
       bigHeader={'Välkommen till Esmia HB'}
       smallHeader={'Vi säljer produkter'}
@@ -75,7 +75,7 @@ const Homepage = () => (
         </Grid.Row>
       </Grid>
     </Segment>
-    <Segment style={{ padding: '0em' }} vertical>
+    <Segment style={{ padding: '0em', background: 'white' }} vertical>
       <Grid celled="internally" columns="equal" stackable>
         <Grid.Row textAlign="center">
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -96,7 +96,7 @@ const Homepage = () => (
         </Grid.Row>
       </Grid>
     </Segment>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '8em 0em', background: 'white' }} vertical>
       <Container text>
         <Header as="h3" style={{ fontSize: '2em' }}>
           Det bästa urvalet från Medelhavet

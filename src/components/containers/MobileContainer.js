@@ -19,14 +19,19 @@ class MobileContainer extends Component {
 
     return (
       <Responsive {...Responsive.onlyMobile}>
-        <Sidebar.Pushable>
+        <Sidebar.Pushable style={{ overflowX: 'hidden' }}>
           <MobileSideNav sidebarOpened={sidebarOpened} />
           <Sidebar.Pusher
             dimmed={sidebarOpened}
             onClick={this.handlePusherClick}
-            style={{ minHeight: '600vh' }}
+            style={{ minHeight: '600vh', maxWidth: '100vw', marginRight: '-20px' }}
           >
-            <Segment inverted textAlign="center" style={{ padding: '1em 0em' }} vertical>
+            <Segment
+              inverted
+              textAlign="center"
+              style={{ padding: '1em 0em', maxWidth: '100vw' }}
+              vertical
+            >
               <Container>
                 <Menu inverted pointing secondary size="large">
                   <Menu.Item onClick={this.handleToggle}>
