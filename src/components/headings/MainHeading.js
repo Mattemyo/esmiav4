@@ -15,7 +15,8 @@ const MainHeading = ({ bigHeader, smallHeader, buttonText }) => {
       style={{
         minHeight: mobile ? 350 : 700,
         padding: '2em 0em',
-        background: 'rgba(0, 0, 0, 0.6)'
+        background: '#1B1C1Db0',
+        marginTop: '-103vh'
       }}
       vertical
     >

@@ -11,7 +11,7 @@ export default class ProductNav extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Grid>
+      <Grid style={{ minHeight: '90vh' }}>
         <Grid.Column width={4}>
           <Menu fluid vertical tabular>
             <Menu.Item name="bio" active={activeItem === 'bio'} onClick={this.handleItemClick} />

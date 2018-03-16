@@ -6,7 +6,7 @@ export default ({ image }) => (
     style={{
       minWidth: '100vw',
       minHeight: '100vh',
-      position: 'absolute',
+      position: 'sticky',
       top: 0,
       zIndex: -2,
       backgroundImage: `url(${image})`,
