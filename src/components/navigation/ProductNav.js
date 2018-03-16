@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Menu, Segment } from 'semantic-ui-react';
 import ProductCard from '../cards/ProductCard';
+import products from '../../utils/db';
 
 export default class ProductNav extends Component {
   state = { activeItem: 'bio' };
@@ -14,16 +15,21 @@ export default class ProductNav extends Component {
       <Grid style={{ minHeight: '90vh' }}>
         <Grid.Column width={4}>
           <Menu fluid vertical tabular>
-            <Menu.Item name="bio" active={activeItem === 'bio'} onClick={this.handleItemClick} />
-            <Menu.Item name="pics" active={activeItem === 'pics'} onClick={this.handleItemClick} />
+
+            <Menu.Item name="skinka" active={activeItem === 'bio'} onClick={this.handleItemClick} />
             <Menu.Item
-              name="companies"
-              active={activeItem === 'companies'}
+              name="chorizo"
+              active={activeItem === 'pics'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
-              name="links"
-              active={activeItem === 'links'}
+              name="kolonial"
+              active={activeItem === 'kolonial'}
+              onClick={this.handleItemClick}
+            />
+            <Menu.Item
+              name="ost"
+              active={activeItem === 'ost'}
               onClick={this.handleItemClick}
             />
           </Menu>
@@ -32,12 +38,12 @@ export default class ProductNav extends Component {
         <Grid.Column stretched width={12}>
           <Segment>
             {activeItem}
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            {products.filter(
+              (product) =>
+                product.type === activeItem && (
+                  <ProductCard name={product.name} image={product.image} price={product.price} />
+                )
+            )}
           </Segment>
         </Grid.Column>
       </Grid>

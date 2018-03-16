@@ -8,10 +8,10 @@ const extra = (
   </a>
 );
 
-const CardExampleCardProps = () => (
+const CardExampleCardProps = ({name, image, price}) => (
   <Card
-    image="/assets/images/avatar/large/elliot.jpg"
-    header="Elliot Baker"
+    image={image}
+    header={name}
     meta="Friend"
     description="Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat."
     extra={extra}

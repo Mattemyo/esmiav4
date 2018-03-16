@@ -16,6 +16,7 @@
   },
   "rules": {
     "no-undef": "off",
+    "linebreak-style": "off",
     "no-unused-vars": "off",
     "no-alert": [2],
     "react/prop-types": 0,
