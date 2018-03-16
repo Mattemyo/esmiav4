@@ -16,8 +16,8 @@ import {
 } from 'semantic-ui-react';
 import MainHeading from '../headings/MainHeading';
 import Footer from '../Footer';
-import norbertoPaellas from '../../images/norbertoPaellas.JPG';
 import maricoPaella2 from '../../images/maricoPaella2.jpg';
+import PageBackground from '../backgrounds/PageBackground';
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -26,20 +26,7 @@ import maricoPaella2 from '../../images/maricoPaella2.jpg';
 
 const Homepage = () => (
   <div className="page" style={{ zIndex: 60 }}>
-    <Segment
-      style={{
-        minWidth: '1000px',
-        minHeight: '1000px',
-        position: 'absolute',
-        top: 0,
-        zIndex: -2,
-        backgroundImage: `url(${maricoPaella2})`,
-        backgroundPosition: '50% 50%',
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed',
-        opacity: 0.9
-      }}
-    />
+    <PageBackground image={maricoPaella2} />
     <MainHeading
       bigHeader={'Välkommen till Esmia HB'}
       smallHeader={'Vi säljer produkter'}

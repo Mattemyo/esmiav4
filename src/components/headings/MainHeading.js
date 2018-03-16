@@ -6,46 +6,49 @@ import { withRouter } from 'react-router';
  * such things.
  */
 
-const MainHeading = ({ mobile, bigHeader, smallHeader, buttonText }) => (
-  <Segment
-    textAlign="center"
-    style={{
-      minHeight: mobile ? 350 : 700,
-      padding: '1em 0em',
-      background: 'rgba(0, 0, 0, 0.6)'
-    }}
-    vertical
-  >
-    <Container text>
-      <Header
-        as="h1"
-        content={bigHeader}
-        inverted
-        style={{
-          fontSize: mobile ? '2em' : '4em',
-          fontWeight: 'normal',
-          marginBottom: 0,
-          marginTop: mobile ? '1.5em' : '3em'
-        }}
-      />
-      <Header
-        as="h2"
-        content={smallHeader}
-        inverted
-        style={{
-          fontSize: mobile ? '1.5em' : '1.7em',
-          fontWeight: 'normal',
-          marginTop: mobile ? '0.5em' : '1.5em'
-        }}
-      />
-      {Boolean(buttonText) && (
-        <Button primary size="huge">
-          {buttonText}
-          <Icon name="right arrow" />
-        </Button>
-      )}
-    </Container>
-  </Segment>
-);
+const MainHeading = ({ bigHeader, smallHeader, buttonText }) => {
+  const mobile = window.innerWidth < 768;
 
+  return (
+    <Segment
+      textAlign="center"
+      style={{
+        minHeight: mobile ? 350 : 700,
+        padding: '2em 0em',
+        background: 'rgba(0, 0, 0, 0.6)'
+      }}
+      vertical
+    >
+      <Container text>
+        <Header
+          as="h1"
+          content={bigHeader}
+          inverted
+          style={{
+            fontSize: mobile ? '2em' : '4em',
+            fontWeight: 'normal',
+            marginBottom: 0,
+            marginTop: mobile ? '1.5em' : '3em'
+          }}
+        />
+        <Header
+          as="h2"
+          content={smallHeader}
+          inverted
+          style={{
+            fontSize: mobile ? '1.5em' : '1.7em',
+            fontWeight: 'normal',
+            marginTop: mobile ? '0.5em' : '1.5em'
+          }}
+        />
+        {Boolean(buttonText) && (
+          <Button primary size="huge">
+            {buttonText}
+            <Icon name="right arrow" />
+          </Button>
+        )}
+      </Container>
+    </Segment>
+  );
+};
 export default withRouter(MainHeading);
