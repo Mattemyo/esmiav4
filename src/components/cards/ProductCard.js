@@ -1,15 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Card, Icon } from 'semantic-ui-react';
-
-function importAll(r) {
-  const images = {};
-  r.keys().forEach((item, index) => {
-    images[item.replace('./', '')] = r(item);
-  });
-  return images;
-}
-
-const images = importAll(require.context('../../images', false, /\.(png|jpe?g|svg)$/));
+import FlipMove from 'react-flip-move';
 
 const extra = (
   <a>
@@ -18,15 +9,27 @@ const extra = (
   </a>
 );
 
-const CardExampleCardProps = ({ name, image, price, description }) => (
-  <Card
-    image={image}
-    header={name}
-    meta="Friend"
-    description={description}
-    extra={price}
-    size="small"
-  />
-);
+class CardExampleCardProps extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  render() {
+    const { props: { image, name, description, price } } = this;
 
+    return (
+      <FlipMove duration={750} easing="ease-out">
+        <Card
+          image={image}
+          header={name}
+          meta="Friend"
+          description={description}
+          extra={price}
+          size="small"
+          key={name + description}
+        />
+      </FlipMove>
+    );
+  }
+}
 export default CardExampleCardProps;

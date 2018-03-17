@@ -9,11 +9,6 @@ export default class ProductNav extends Component {
     activeList: products.filter((product) => product.type === this.activeItem)
   };
 
-  componentDidMount = () => {
-    const req = require.context('../../images', false);
-    req.keys().forEach((key) => req(key));
-  };
-
   handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name });
   };
@@ -51,15 +46,15 @@ export default class ProductNav extends Component {
         <Grid.Column stretched width={12}>
           <Segment>
             <Card.Group itemsPerRow={3}>
-              {activeList.map((product, i) => (
-                <ProductCard
-                  image={product.image}
-                  name={product.name}
-                  price={product.price}
-                  description={product.description}
-                  key={product.name + product.description}
-                />
-              ))}
+                {activeList.map((product, i) => (
+                  <ProductCard
+                    image={product.image}
+                    name={product.name}
+                    price={product.price}
+                    description={product.description}
+                    key={product.name + product.description}
+                  />
+                ))}
             </Card.Group>
           </Segment>
         </Grid.Column>
