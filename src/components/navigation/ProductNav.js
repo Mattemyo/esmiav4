@@ -51,10 +51,11 @@ export default class ProductNav extends Component {
                   image={product.image}
                   name={product.name}
                   price={product.price}
+                  type={product.type}
                   description={product.description}
                   key={product.name + product.description}
                   idx={idx}
-                  isHidden={product.type !== activeItem}
+                  activeItem={activeItem}
                 />
               ))}
             </Card.Group>
