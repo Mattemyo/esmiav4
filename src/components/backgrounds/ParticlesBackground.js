@@ -1,11 +1,10 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-import { on } from 'cluster';
 
 const particlesOptions = {
   particles: {
     number: {
-      value: 20
+      value: 130
     },
     line_linked: {
       number: {
@@ -17,17 +16,21 @@ const particlesOptions = {
       }
     },
     size: {
-      value: 12
+      value: 3
     },
     move: {
-      speed: 10
+      speed: 2
     }
   },
   interactivity: {
     events: {
       onhover: {
         enable: true,
-        // mode: 'repulse'
+        mode: 'repulse'
+      },
+      onclick: {
+        enable: true,
+        mode: 'grab'
       }
     }
   }
