@@ -6,16 +6,15 @@ import products from '../../utils/db';
 
 export default class ProductNav extends Component {
   state = {
-    activeItem: 'skinka',
-    activeList: products.filter((product) => product.type === this.activeItem)
+    activeItem: 'skinka'
   };
 
   handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name });
   };
+
   render() {
     const { activeItem } = this.state;
-    const activeList = products.filter((product) => product.type === activeItem);
 
     return (
       <Grid style={{ minHeight: '90vh' }}>
@@ -46,8 +45,8 @@ export default class ProductNav extends Component {
 
         <Grid.Column stretched width={12}>
           <Segment>
-            <Card.Group>
-              {activeList.map((product, idx) => (
+            <Card.Group itemsPerRow={3}>
+              {products.map((product, idx) => (
                 <ProductCard
                   image={product.image}
                   name={product.name}
@@ -55,6 +54,7 @@ export default class ProductNav extends Component {
                   description={product.description}
                   key={product.name + product.description}
                   idx={idx}
+                  isHidden={product.type !== activeItem}
                 />
               ))}
             </Card.Group>

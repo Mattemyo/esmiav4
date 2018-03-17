@@ -12,19 +12,19 @@ const mapStyles = ({ translateX, opacity }: { translateX: number, opacity: numbe
 const bounce = (val: {}): {} =>
   spring(val, {
     stiffness: 150,
-    damping: 20
+    damping: 40
   });
 // child matches will...
 const bounceTransition = {
   // start in a transparent, uptranslateXd state
   atEnter: {
     opacity: 0,
-    translateX: 25
+    translateX: 90
   },
   // leave in a transparent, downtranslateXd state
   atLeave: {
-    opacity: bounce(0),
-    translateX: bounce(-25)
+    opacity: bounce(0.08),
+    translateX: bounce(-60)
   },
   // and rest at an opaque, normally-translateXd state
   atActive: {
