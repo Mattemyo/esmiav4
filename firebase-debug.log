@@ -1,0 +1,23 @@
+[debug] [2018-03-17T23:55:01.881Z] ----------------------------------------------------------------------
+[debug] [2018-03-17T23:55:01.891Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Matias\.npm-global\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-03-17T23:55:01.892Z] CLI Version:   3.17.4
+[debug] [2018-03-17T23:55:01.892Z] Platform:      win32
+[debug] [2018-03-17T23:55:01.893Z] Node Version:  v8.9.1
+[debug] [2018-03-17T23:55:01.897Z] Time:          Sun Mar 18 2018 00:55:01 GMT+0100 (W. Europe Standard Time)
+[debug] [2018-03-17T23:55:01.898Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-17T23:55:02.130Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-17T23:55:02.134Z] > authorizing via signed-in user
+[debug] [2018-03-17T23:55:02.144Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/esmia1233  
+  
+ Sun Mar 18 2018 00:55:02 GMT+0100 (W. Europe Standard Time)
+[debug] [2018-03-17T23:55:03.031Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-17T23:55:03.033Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/esmia1233/tokens  
+  
+ Sun Mar 18 2018 00:55:03 GMT+0100 (W. Europe Standard Time)
+[debug] [2018-03-17T23:55:03.836Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'esmia1233'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing build directory for upload...
