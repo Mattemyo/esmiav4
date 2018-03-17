@@ -18,13 +18,14 @@ const extra = (
   </a>
 );
 
-const CardExampleCardProps = ({ name, image, price }) => (
+const CardExampleCardProps = ({ name, image, price, description }) => (
   <Card
     image={image}
     header={name}
     meta="Friend"
-    description="Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat."
-    extra={extra}
+    description={description}
+    extra={price}
+    size="small"
   />
 );
 
