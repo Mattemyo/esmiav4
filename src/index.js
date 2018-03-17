@@ -11,6 +11,7 @@ ReactDOM.render(
     <Route component={App} />
   </BrowserRouter>,
   document.getElementById('root')
+  
 );
 
 registerServiceWorker();

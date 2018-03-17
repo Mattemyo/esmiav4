@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css' />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -19,22 +21,142 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>Esmia HB</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+      <div class="ui inverted vertical ui uncover left sidebar menu">
+        <div class="active item">
+          <a class="active" aria-current="true" href="/">Hem</a>
+        </div>
+        <div class="item">
+          <a aria-current="false" href="/products">Produkter</a>
+        </div>
+        <div class="item">
+          <a aria-current="false" href="/about">Om</a>
+        </div>
+        <div class="item">
+          <a aria-current="false" href="/contact">Kontakt</a>
+        </div>
+      </div>
+      <div class="pusher" style="min-height: 100vh; overflow-y: scroll; min-width: 120vw;">
+        <div class="ui inverted vertical center aligned segment" style="padding: 1em 0em;">
+          <div class="ui container">
+            <div class="ui large inverted pointing secondary menu">
+              <a class="item">
+                <i aria-hidden="true" class="sidebar icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="route-wrapper">
+          <div style="opacity: 1; transform: translateX(0%);">
+            <div class="page" style="z-index: 60;">
+              <div class="ui segment" style="min-width: 100vw; min-height: 100vh; position: sticky; top: 0px; z-index: -2; background-image: url(&quot;/static/media/maricoPaella2.09b5c244.jpg&quot;); background-position: 50% 80%; background-size: cover; background-attachment: fixed; opacity: 0.9;"></div>
+              <div class="ui vertical center aligned segment" style="min-height: 350px; padding: 2em 0em; background: rgba(27, 28, 29, 0.69); margin-top: -103vh;">
+                <div class="ui text container">
+                  <h1 class="ui inverted header" style="font-size: 2em; font-weight: normal; margin-bottom: 0px; margin-top: 1.5em;">Välkommen till Esmia HB</h1>
+                  <h2 class="ui inverted header" style="font-size: 1.5em; font-weight: normal; margin-top: 0.5em;">Vi säljer produkter</h2>
+                  <button class="ui huge primary button" role="button">Se produkter
+                    <i aria-hidden="true" class="right arrow icon"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="ui vertical segment" style="padding: 8em 0em; background: white;">
+                <div class="ui container stackable middle aligned grid">
+                  <div class="row">
+                    <div class="eight wide column">
+                      <h3 class="ui header" style="font-size: 2em;">Vi säljer spanska delikatesser</h3>
+                      <p style="font-size: 1.33em;">Produkterna är utvalda från de bästa producenterna i Spanien. Vi säljer bland annat lorem, lorem, lorem
+                        till konkurrenskraftiga priser.</p>
+                      <h3 class="ui header" style="font-size: 2em;">Catering</h3>
+                      <p style="font-size: 1.33em;">Vill ni fira er födelsedag med medelhavsmat? Eller varför inte fira studenten med Paella? Vare sig
+                        ni är 10 eller 100 personer så fixar vi det.</p>
+                    </div>
+                    <div class="right floated six wide column">
+                      <img src="/assets/images/wireframe/white-image.png" alt="fin bild" class="ui large bordered rounded image">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="center aligned column">
+                      <button class="ui huge button" role="button">Bacon Ipsum</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui vertical segment" style="padding: 0em; background: white;">
+                <div class="ui stackable internally celled equal width grid">
+                  <div class="center aligned row">
+                    <div class="column" style="padding-bottom: 5em; padding-top: 5em;">
+                      <h3 class="ui header" style="font-size: 2em;">"Fint citat här"</h3>
+                      <p style="font-size: 1.33em;">Denna webbsida är under utveckling</p>
+                    </div>
+                    <div class="column" style="padding-bottom: 5em; padding-top: 5em;">
+                      <h3 class="ui header" style="font-size: 2em;">"Ett till citat har"</h3>
+                      <p style="font-size: 1.33em;">
+                        <img src="/assets/images/avatar/large/nan.jpg" alt="fin bild" class="ui avatar image">Someone</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui vertical segment" style="padding: 8em 0em; background: white;">
+                <div class="ui text container">
+                  <h3 class="ui header" style="font-size: 2em;">Det bästa urvalet från Medelhavet</h3>
+                  <p style="font-size: 1.33em;">Bacon ipsum dolor amet ribeye kevin pancetta capicola strip steak venison. Picanha ribeye porchetta shoulder
+                    spare ribs tail chuck. Salami leberkas chicken kielbasa short ribs, capicola pancetta. Turducken pastrami
+                    alcatra capicola frankfurter ground round ball tip pork loin tail jerky landjaeger doner fatback. Burgdoggen
+                    tail strip steak, frankfurter pancetta ball tip fatback venison porchetta cow.</p>
+                  <a class="ui large button" role="button">Läs mer</a>
+                  <h4 class="ui horizontal divider header" style="margin: 3em 0em; text-transform: uppercase;">
+                    <a href="#">Mer info</a>
+                  </h4>
+                  <h3 class="ui header" style="font-size: 2em;">Gillar du mat?</h3>
+                  <p style="font-size: 1.33em;">lorem mat mat mat mums</p>
+                  <a class="ui large button" role="button">Ta mig dit</a>
+                </div>
+              </div>
+              <div>
+                <div class="ui inverted vertical segment" style="padding: 5em 0em;">
+                  <div class="ui container">
+                    <div class="ui inverted stackable divided grid">
+                      <div class="row">
+                        <div class="three wide column">
+                          <h4 class="ui inverted header">Om</h4>
+                          <div role="list" class="ui inverted link list">
+                            <a role="listitem" class="item">Karta</a>
+                            <a role="listitem" class="item">Kontakta oss</a>
+                          </div>
+                        </div>
+                        <div class="three wide column">
+                          <h4 class="ui inverted header">Services</h4>
+                          <div role="list" class="ui inverted link list">
+                            <a role="listitem" class="item">Lorem</a>
+                            <a role="listitem" class="item">Lorem</a>
+                          </div>
+                        </div>
+                        <div class="seven wide column">
+                          <h4 class="ui inverted header">Footer Header</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo exercitationem facere rem fuga ipsum,
+                            veniam minus nostrum nisi molestiae error vitae aliquid dicta tempora dolor quod quaerat quia
+                            nihil at!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+ 
+</body>
+
 </html>
