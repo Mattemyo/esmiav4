@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Menu, Segment, Card } from 'semantic-ui-react';
+import FlipMove from 'react-flip-move';
 import ProductCard from '../cards/ProductCard';
 import products from '../../utils/db';
 
@@ -45,16 +46,17 @@ export default class ProductNav extends Component {
 
         <Grid.Column stretched width={12}>
           <Segment>
-            <Card.Group itemsPerRow={3}>
-                {activeList.map((product, i) => (
-                  <ProductCard
-                    image={product.image}
-                    name={product.name}
-                    price={product.price}
-                    description={product.description}
-                    key={product.name + product.description}
-                  />
-                ))}
+            <Card.Group>
+              {activeList.map((product, idx) => (
+                <ProductCard
+                  image={product.image}
+                  name={product.name}
+                  price={product.price}
+                  description={product.description}
+                  key={product.name + product.description}
+                  idx={idx}
+                />
+              ))}
             </Card.Group>
           </Segment>
         </Grid.Column>
