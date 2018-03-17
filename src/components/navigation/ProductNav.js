@@ -4,22 +4,35 @@ import ProductCard from '../cards/ProductCard';
 import products from '../../utils/db';
 
 export default class ProductNav extends Component {
-  state = { activeItem: 'bio' };
+  state = {
+    activeItem: 'skinka',
+    activeList: products.filter((product) => product.type === this.activeItem)
+  };
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+  componentDidMount = () => {
+    const req = require.context('../../images', false);
+    req.keys().forEach((key) => req(key));
+  };
 
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name });
+  };
   render() {
     const { activeItem } = this.state;
+    const activeList = products.filter((product) => product.type === activeItem);
 
     return (
       <Grid style={{ minHeight: '90vh' }}>
         <Grid.Column width={4}>
           <Menu fluid vertical tabular>
-
-            <Menu.Item name="skinka" active={activeItem === 'bio'} onClick={this.handleItemClick} />
+            <Menu.Item
+              name="skinka"
+              active={activeItem === 'skinka'}
+              onClick={this.handleItemClick}
+            />
             <Menu.Item
               name="chorizo"
-              active={activeItem === 'pics'}
+              active={activeItem === 'chorizo'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
@@ -28,8 +41,8 @@ export default class ProductNav extends Component {
               onClick={this.handleItemClick}
             />
             <Menu.Item
-              name="ost"
-              active={activeItem === 'ost'}
+              name="ostar"
+              active={activeItem === 'ostar'}
               onClick={this.handleItemClick}
             />
           </Menu>
@@ -37,13 +50,14 @@ export default class ProductNav extends Component {
 
         <Grid.Column stretched width={12}>
           <Segment>
-            {activeItem}
-            {products.filter(
-              (product) =>
-                product.type === activeItem && (
-                  <ProductCard name={product.name} image={product.image} price={product.price} />
-                )
-            )}
+            {activeList.map((product, i) => (
+              <ProductCard
+                image={product.image}
+                name={product.name}
+                price={product.price}
+                key={product.name + product.description}
+              />
+            ))}
           </Segment>
         </Grid.Column>
       </Grid>
