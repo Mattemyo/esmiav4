@@ -11,10 +11,8 @@ const extra = (
 class ProductCard extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
+    this.state = {};
   }
-
 
   get cardStyle() {
     // hide elements
@@ -23,13 +21,13 @@ class ProductCard extends Component {
         opacity: 0.1,
         transform: 'scaleX(0)',
         position: 'absolute',
-        transition: `transform ${0.2}s, position 0.2s 0.2s`
+        transition: `all ${0.2}s`,
       };
     }
 
     // display elements
     return {
-      opacity: 1,
+      opacity: 0.76,
       transition: `all ${0.2}s ${0.2 + 0.03 * this.props.idx}s`
     };
   }
@@ -49,11 +47,11 @@ class ProductCard extends Component {
         description={description}
         extra={price}
         size="small"
-        key={name + description}
         style={{
           opacity: 0,
           ...cardStyle
         }}
+        color="blue"
       />
     );
   }

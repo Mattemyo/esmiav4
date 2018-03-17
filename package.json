@@ -16,6 +16,7 @@
     "react-router-transition": "^1.2.1",
     "react-scripts": "1.0.17",
     "react-scrolllock": "^2.0.1",
+    "react-sticky": "^6.0.1",
     "semantic-ui-css": "^2.3.0",
     "semantic-ui-react": "^0.78.3"
   },
