@@ -31,11 +31,11 @@ class MobileContainer extends Component {
             </Menu.Item>
 
             <Menu.Item active={location.pathname === '/about'}>
-              <NavLink to="/">Om</NavLink>
+              <NavLink to="/about">Om</NavLink>
             </Menu.Item>
 
             <Menu.Item active={location.pathname === '/contact'}>
-              <NavLink to="/">Kontakt</NavLink>
+              <NavLink to="/contact">Kontakt</NavLink>
             </Menu.Item>
           </Sidebar>
 
