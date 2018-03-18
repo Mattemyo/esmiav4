@@ -19,10 +19,13 @@ const ProductsPage = () => (
     <Segment
       style={{
         padding: '8em 0em',
-        background: '#d3d3d3ef'
+        opacity: 0.9,
+        background: 'white'
       }}
       vertical
     >
+
+
       <Container>
         <ProductNav />
       </Container>

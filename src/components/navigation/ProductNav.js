@@ -21,41 +21,45 @@ export default class ProductNav extends Component {
 
     return (
       <Grid style={{ minHeight: '90vh' }}>
-        <Grid.Column width={mobile ? 6 : 4}>
+        <Grid.Column width={mobile ? 4 : 4}>
           <Menu
             vertical
             tabular
             style={{
               opacity: 0.86,
               fontSize: '1.4em',background: bg,
-              borderRadius: '2px'
+              borderRadius: '2px',
+              maxWidth:'100%'
             }}
           >
             <Menu.Item
               name="skinka"
-              active={activeItem === 'skinka'}
-              onClick={this.handleItemClick}
-              style={{background: 'blue'}}
+                          onClick={this.handleItemClick}
+              style={{background: `${activeItem === 'skinka' ? 'blue' : 'white'}`}}
             />
             <Menu.Item
               name="chorizo"
-              active={activeItem === 'chorizo'}
-              onClick={this.handleItemClick}
+                           onClick={this.handleItemClick}
+              style={{background: `${activeItem === 'chorizo' ? 'blue' : 'white'}`}}
+           
             />
             <Menu.Item
               name="kolonial"
-              active={activeItem === 'kolonial'}
+             
               onClick={this.handleItemClick}
+              style={{background: `${activeItem === 'kolonial' ? 'blue' : 'white'}`}}
+              
             />
             <Menu.Item
               name="ostar"
-              active={activeItem === 'ostar'}
-              onClick={this.handleItemClick}
+                         onClick={this.handleItemClick}
+              style={{background: `${activeItem === 'ostar' ? 'blue' : 'white'}`}}
+                         
             />
           </Menu>
         </Grid.Column>
 
-        <Grid.Column stretched width={mobile ? 10 : 12}>
+        <Grid.Column stretched width={mobile ? 12 : 12}>
           <Segment style={{ background: bg }}>
             <Card.Group itemsPerRow={mobile ? 2 : 3}>
               {products.map((product, idx) => (

@@ -49,6 +49,7 @@ class ProductCard extends Component {
         size="small"
         style={{
           opacity: 0,
+          boxShadow: '2px 2px 8px',
           ...cardStyle
         }}
         color="blue"
