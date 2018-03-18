@@ -18,9 +18,10 @@ class MobileTopNav extends Component {
 
   render() {
 
-       const { children, location } = this.props;
-    const { menuOpened } = this.state;
-    const menuStyle = {width: '100vw', textAlign: 'left', transform: `scaleY(${menuOpened ? 1 : 0})` }
+      
+    const {state:{menuOpened}, props:{children, location}, handlePusherClick, handleToggle} = this;
+
+    const menuStyle = {width: '100vw', textAlign: 'left', transform: `scaleX(${menuOpened ? 1 : 0})` }
 
 
     return (
@@ -28,7 +29,7 @@ class MobileTopNav extends Component {
        <Segment inverted textAlign="center" style={{ padding: '1em 0em', height: '80px' }} vertical>
               <Container>
                 <Menu inverted pointing secondary size="large">
-                  <Menu.Item position="right" onClick={this.handleToggle}>
+                  <Menu.Item position="right" onClick={handleToggle}>
                     <Icon name={`${menuOpened ? 'close' : "sidebar"}`} />
                     
                   </Menu.Item>
@@ -36,20 +37,20 @@ class MobileTopNav extends Component {
               </Container>
 
           <Menu style={{...menuStyle, transition: 'all 0.2s ease-out 0.2s'}} inverted vertical width={16}>
-            <Menu.Item  as={NavLink} to ="/home" active={location.pathname === '/home'}>
+            <Menu.Item onClick={handleToggle}  as={NavLink} to ="/home" active={location.pathname === '/home'}>
               Hem
             </Menu.Item>
 
-            <Menu.Item as={NavLink} to ="/products" active={location.pathname === '/products'}>
+            <Menu.Item onClick={handleToggle} as={NavLink} to ="/products" active={location.pathname === '/products'}>
               Produkter
             </Menu.Item>
 
 
-            <Menu.Item as={NavLink} to ="/about" active={location.pathname === '/about'}>
+            <Menu.Item onClick={handleToggle} as={NavLink} to ="/about" active={location.pathname === '/about'}>
              Om
             </Menu.Item>
 
-            <Menu.Item as={NavLink} to ="/contact" active={location.pathname === '/contact'}>
+            <Menu.Item onClick={handleToggle} as={NavLink} to ="/contact" active={location.pathname === '/contact'}>
               Kontakt
             </Menu.Item>
           </Menu>

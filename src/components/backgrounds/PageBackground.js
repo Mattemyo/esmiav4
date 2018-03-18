@@ -18,7 +18,9 @@ export default ({ image }) => {
       zIndex: -2,
       backgroundPosition: '50% 80%',
       backgroundSize: 'cover',
-      opacity: 0.9
+      backgroundAttachment: 'fixed',
+      opacity: 0.9,
+      position: 'absolute'
     }}
   />
 );}
