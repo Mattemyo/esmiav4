@@ -24,7 +24,7 @@ const bounceTransition = {
   // leave in a transparent, downtranslateXd state
   atLeave: {
     opacity: bounce(0.08),
-    translateX: bounce(-60)
+    translateX: bounce(-100)
   },
   // and rest at an opaque, normally-translateXd state
   atActive: {

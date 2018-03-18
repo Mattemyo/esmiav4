@@ -25,8 +25,9 @@ import PageBackground from '../backgrounds/PageBackground';
  */
 
 const Homepage = () => (
-  <div className="page" style={{ zIndex: 60 }}>
+  <div className="page" style={{ zIndex: 60}}>
     <PageBackground image={maricoPaella2} />
+  
     <MainHeading
       bigHeader={'Välkommen till Esmia HB'}
       smallHeader={'Vi säljer produkter'}
@@ -129,6 +130,7 @@ const Homepage = () => (
       </Container>
     </Segment>
     <Footer />
+    
   </div>
 );
 

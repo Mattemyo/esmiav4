@@ -16,9 +16,11 @@ const MainHeading = ({ bigHeader, smallHeader, buttonText }) => {
         minHeight: mobile ? 350 : 700,
         padding: '2em 0em',
         background: '#1B1C1Db0',
-        marginTop: '-103vh'
+        position: 'relative',
+   
       }}
       vertical
+
     >
       <Container text>
         <Header
