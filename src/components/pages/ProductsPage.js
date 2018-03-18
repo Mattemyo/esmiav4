@@ -19,7 +19,7 @@ const ProductsPage = () => (
     <Segment
       style={{
         padding: '8em 0em',
-        background: '#d3d3d39f'
+        background: '#d3d3d3ef'
       }}
       vertical
     >

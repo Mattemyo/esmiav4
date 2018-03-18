@@ -17,6 +17,7 @@ export default class ProductNav extends Component {
   render() {
     const { activeItem } = this.state;
     const mobile = window.innerWidth < 786;
+    const bg = '#8c91ab6d'
 
     return (
       <Grid style={{ minHeight: '90vh' }}>
@@ -26,13 +27,15 @@ export default class ProductNav extends Component {
             tabular
             style={{
               opacity: 0.86,
-              fontSize: '1.4em'
+              fontSize: '1.4em',background: bg,
+              borderRadius: '2px'
             }}
           >
             <Menu.Item
               name="skinka"
               active={activeItem === 'skinka'}
               onClick={this.handleItemClick}
+              style={{background: 'blue'}}
             />
             <Menu.Item
               name="chorizo"
@@ -53,8 +56,8 @@ export default class ProductNav extends Component {
         </Grid.Column>
 
         <Grid.Column stretched width={mobile ? 10 : 12}>
-          <Segment style={{ background: '#8c91ab6d' }}>
-            <Card.Group itemsPerRow={mobile ? 1 : 3}>
+          <Segment style={{ background: bg }}>
+            <Card.Group itemsPerRow={mobile ? 2 : 3}>
               {products.map((product, idx) => (
                 <ProductCard
                   image={product.image}
