@@ -14,9 +14,8 @@ const MainHeading = ({ bigHeader, smallHeader, buttonText }) => {
       textAlign="center"
       style={{
         minHeight: mobile ? 350 : 700,
-        padding: '2em 0em',
+        paddingTop: `${mobile ? 6 : 2}em`,
         background: '#1B1C1Db0',
-        position: 'relative',
    
       }}
       vertical

@@ -5,7 +5,7 @@ import { Responsive, Sidebar, Segment, Menu, Icon, Container } from 'semantic-ui
 
 class MobileTopNav extends Component {
     state = {
-    menuOpened: true
+    menuOpened: false
   };
 
   handlePusherClick = () => {
