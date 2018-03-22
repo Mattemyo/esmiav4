@@ -19,20 +19,20 @@ const bounceTransition = {
   // start in a transparent, upscaleXd state
   atEnter: {
     opacity: 0,
-    scaleX: 0,
+    // scaleX: 0,
     delay: 0.2
   },
   // leave in a transparent, downscaleXd state
   atLeave: {
     opacity: 0,
-    scaleX: 0,
+    // scaleX: 0,
     delay: 0
     
   },
   // and rest at an opaque, normally-scaleXd state
   atActive: {
     opacity: bounce(1),
-    scaleX: bounce(1),
+    // scaleX: bounce(1),
     delay: 0
     
   }
