@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Header, Button, Icon, Segment, Image } from 'semantic-ui-react';
 import { withRouter } from 'react-router';
 
@@ -6,7 +7,7 @@ import { withRouter } from 'react-router';
  * such things.
  */
 
-const MainHeading = ({ bigHeader, smallHeader, buttonText }) => {
+const MainHeading = ({ bigHeader, smallHeader, buttonText, link }) => {
   const mobile = window.innerWidth < 768;
 
   return (
@@ -15,11 +16,9 @@ const MainHeading = ({ bigHeader, smallHeader, buttonText }) => {
       style={{
         minHeight: mobile ? 350 : 700,
         paddingTop: `${mobile ? 6 : 2}em`,
-        background: '#1B1C1Db0',
-   
+        background: '#1B1C1Db0'
       }}
       vertical
-
     >
       <Container text>
         <Header
@@ -44,7 +43,7 @@ const MainHeading = ({ bigHeader, smallHeader, buttonText }) => {
           }}
         />
         {Boolean(buttonText) && (
-          <Button primary size="huge">
+          <Button as={Link} to={link} primary size="huge">
             {buttonText}
             <Icon name="right arrow" />
           </Button>

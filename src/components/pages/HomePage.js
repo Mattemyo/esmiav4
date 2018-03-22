@@ -30,8 +30,9 @@ const Homepage = () => (
   
     <MainHeading
       bigHeader={'Välkommen till Esmia HB'}
-      smallHeader={'Vi säljer produkter'}
+      smallHeader={'Spansk deli i Sverige'}
       buttonText={'Se produkter'}
+      link={'/products'}
     />
     <Segment
       style={{
