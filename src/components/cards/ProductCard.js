@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Icon } from 'semantic-ui-react';
+import { Card, Icon, Modal, Image, Header } from 'semantic-ui-react';
 
 const extra = (
   <a>
@@ -11,7 +11,9 @@ const extra = (
 class ProductCard extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      isModalDisplayed: false
+    };
   }
 
   get cardStyle() {
@@ -21,7 +23,7 @@ class ProductCard extends Component {
         opacity: 0.1,
         transform: 'scaleX(0)',
         position: 'absolute',
-        transition: `all ${0.2}s`,
+        transition: `all ${0.2}s`
       };
     }
 
@@ -32,28 +34,53 @@ class ProductCard extends Component {
     };
   }
 
+  displayModal = () => {
+    this.setState({ isModalDisplayed: true });
+  };
+
   render() {
     const {
       cardStyle,
-      state: { style },
+      displayModal,
+      state: { style, isModalDisplayed },
       props: { image, name, description, price, idx, activeItem }
     } = this;
+    // get short desc
+    const descriptionPreview = `${description.substr(
+      0,
+      `${description.substr(0, 90).lastIndexOf(' ')}`
+    )}...`;
 
     return (
-      <Card
-        image={image}
-        header={name}
-        meta="Friend"
-        description={description}
-        extra={price}
-        size="small"
-        style={{
-          opacity: 0,
-          boxShadow: '2px 2px 8px',
-          ...cardStyle
-        }}
-        color="blue"
-      />
+      <Modal
+        trigger={
+          <Card
+            onClick={displayModal}
+            image={image}
+            header={name}
+            description={descriptionPreview}
+            extra={price}
+            size="small"
+            style={{
+              opacity: 0,
+              boxShadow: '2px 2px 8px',
+              cursor: 'pointer',
+              ...cardStyle
+            }}
+            color="blue"
+          />
+        }
+      >
+        <Modal.Header>Select a Photo</Modal.Header>
+        <Modal.Content image>
+          <Image wrapped size="medium" src="/assets/images/avatar/large/rachel.png" />
+          <Modal.Description>
+            <Header>Default Profile Image</Header>
+            <p>We've found the following gravatar image associated with your e-mail address.</p>
+            <p>Is it okay to use this photo?</p>
+          </Modal.Description>
+        </Modal.Content>
+      </Modal>
     );
   }
 }

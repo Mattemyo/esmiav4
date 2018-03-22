@@ -17,51 +17,49 @@ export default class ProductNav extends Component {
   render() {
     const { activeItem } = this.state;
     const mobile = window.innerWidth < 786;
-    const bg = '#8c91ab6d'
+    const bg = '#8c91ab6d';
 
     return (
       <Grid style={{ minHeight: '90vh' }}>
-        <Grid.Column width={mobile ? 4 : 4}>
+        <Grid.Column width={mobile ? 5 : 4}>
           <Menu
             vertical
             tabular
             style={{
               opacity: 0.86,
-              fontSize: '1.4em',background: bg,
+              fontSize: '1.2em',
+              background: bg,
               borderRadius: '2px',
-              maxWidth:'100%'
+              maxWidth: '100%',
+              textAlign: 'left'
             }}
           >
             <Menu.Item
               name="skinka"
-                          onClick={this.handleItemClick}
-              style={{background: `${activeItem === 'skinka' ? 'blue' : 'white'}`}}
+              onClick={this.handleItemClick}
+              style={{ background: `${activeItem === 'skinka' ? 'blue' : 'white'}` }}
             />
             <Menu.Item
               name="chorizo"
-                           onClick={this.handleItemClick}
-              style={{background: `${activeItem === 'chorizo' ? 'blue' : 'white'}`}}
-           
+              onClick={this.handleItemClick}
+              style={{ background: `${activeItem === 'chorizo' ? 'blue' : 'white'}` }}
             />
             <Menu.Item
               name="kolonial"
-             
               onClick={this.handleItemClick}
-              style={{background: `${activeItem === 'kolonial' ? 'blue' : 'white'}`}}
-              
+              style={{ background: `${activeItem === 'kolonial' ? 'blue' : 'white'}` }}
             />
             <Menu.Item
               name="ostar"
-                         onClick={this.handleItemClick}
-              style={{background: `${activeItem === 'ostar' ? 'blue' : 'white'}`}}
-                         
+              onClick={this.handleItemClick}
+              style={{ background: `${activeItem === 'ostar' ? 'blue' : 'white'}` }}
             />
           </Menu>
         </Grid.Column>
 
-        <Grid.Column stretched width={mobile ? 12 : 12}>
+        <Grid.Column stretched width={mobile ? 11 : 12}>
           <Segment style={{ background: bg }}>
-            <Card.Group itemsPerRow={mobile ? 2 : 3}>
+            <Card.Group itemsPerRow={mobile ? 1 : 3}>
               {products.map((product, idx) => (
                 <ProductCard
                   image={product.image}
