@@ -14,6 +14,7 @@ import {
   Sidebar,
   Visibility
 } from 'semantic-ui-react';
+import { NavLink } from 'react-router-dom';
 import MainHeading from '../headings/MainHeading';
 import Footer from '../Footer';
 import maricoPaella2 from '../../images/maricoPaella2.jpg';
@@ -25,9 +26,9 @@ import PageBackground from '../backgrounds/PageBackground';
  */
 
 const Homepage = () => (
-  <div className="page" style={{ zIndex: 60}}>
+  <div className="page" style={{ zIndex: 60 }}>
     <PageBackground image={maricoPaella2} />
-  
+
     <MainHeading
       bigHeader={'Välkommen till Esmia HB'}
       smallHeader={'Spansk deli i Sverige'}
@@ -72,7 +73,9 @@ const Homepage = () => (
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign="center">
-            <Button size="huge">Bacon Ipsum</Button>
+           <Button as={NavLink} to="/products" size="huge">
+             Kontakta oss
+            </Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -122,16 +125,15 @@ const Homepage = () => (
           <a href="#">Mer info</a>
         </Divider>
         <Header as="h3" style={{ fontSize: '2em' }}>
-          Gillar du mat?
+          Har du frågor eller funderingar?
         </Header>
-        <p style={{ fontSize: '1.33em' }}>lorem mat mat mat mums</p>
-        <Button as="a" size="large">
+        <p style={{ fontSize: '1.33em' }}>Maila eller ring till:</p>
+        {/* <Button as="a" size="large">
           Ta mig dit
-        </Button>
+        </Button> */}
       </Container>
     </Segment>
     <Footer />
-    
   </div>
 );
 

@@ -8,13 +8,34 @@ const extra = (
   </a>
 );
 
+const mobile = window.innerWidth < 600;
+
+const modalStyle = {
+  top: 300,
+  width: mobile ? '80%' : '50%',
+  left: '25%',
+  position: 'absolute',
+  opacity: 0
+};
+
 class ProductCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isModalDisplayed: false
+      modalDidMount: false,
+      style: {
+        top: 300,
+        width: mobile ? '80%' : '50%',
+        left: '25%',
+        position: 'absolute',
+        opacity: 0
+      }
     };
   }
+
+  onModalMount = () => {
+    this.setState({ style: { ...this.state.style, opacity: 1, transition: 'all 0.3s ease-out' } });
+  };
 
   get cardStyle() {
     // hide elements
@@ -34,15 +55,11 @@ class ProductCard extends Component {
     };
   }
 
-  displayModal = () => {
-    this.setState({ isModalDisplayed: true });
-  };
-
   render() {
     const {
       cardStyle,
-      displayModal,
-      state: { style, isModalDisplayed },
+      onModalMount,
+      state: { style },
       props: { image, name, description, price, idx, activeItem }
     } = this;
     // get short desc
@@ -53,9 +70,12 @@ class ProductCard extends Component {
 
     return (
       <Modal
+        closeIcon
+        color="blue"
+        style={style}
+        onMount={onModalMount}
         trigger={
           <Card
-            onClick={displayModal}
             image={image}
             header={name}
             description={descriptionPreview}
@@ -71,13 +91,18 @@ class ProductCard extends Component {
           />
         }
       >
-        <Modal.Header>Select a Photo</Modal.Header>
+        {/* <Modal.Header>{name}</Modal.Header> */}
         <Modal.Content image>
-          <Image wrapped size="medium" src="/assets/images/avatar/large/rachel.png" />
+          <Image
+            style={{ borderRadius: '3px', boxShadow: '3px 3px 8px' }}
+            wrapped
+            size="medium"
+            src={image}
+          />
           <Modal.Description>
-            <Header>Default Profile Image</Header>
-            <p>We've found the following gravatar image associated with your e-mail address.</p>
-            <p>Is it okay to use this photo?</p>
+            <Header>{name}</Header>
+            <p>{description}</p>
+            <p>Pris: {price}</p>
           </Modal.Description>
         </Modal.Content>
       </Modal>

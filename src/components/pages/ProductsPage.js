@@ -12,7 +12,7 @@ const ProductsPage = () => (
     <PageBackground image={buffe} />
     <MainHeading
       bigHeader={'Våra produkter'}
-      smallHeader={'Lorem, lorem, lorem'}
+      smallHeader={'Charkuterier, ostar och kolonial'}
       buttonText={''}
       image={buffe}
     />
@@ -24,8 +24,6 @@ const ProductsPage = () => (
       }}
       vertical
     >
-
-
       <Container>
         <ProductNav />
       </Container>

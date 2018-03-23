@@ -37,28 +37,28 @@ export default class ProductNav extends Component {
             <Menu.Item
               name="skinka"
               onClick={this.handleItemClick}
-              style={{ background: `${activeItem === 'skinka' ? 'blue' : 'white'}` }}
+              style={{ background: `${activeItem === 'skinka' ? '#e5e5e5' : 'white'}` }}
             />
             <Menu.Item
               name="chorizo"
               onClick={this.handleItemClick}
-              style={{ background: `${activeItem === 'chorizo' ? 'blue' : 'white'}` }}
+              style={{ background: `${activeItem === 'chorizo' ? '#e5e5e5' : 'white'}` }}
             />
             <Menu.Item
               name="kolonial"
               onClick={this.handleItemClick}
-              style={{ background: `${activeItem === 'kolonial' ? 'blue' : 'white'}` }}
+              style={{ background: `${activeItem === 'kolonial' ? '#e5e5e5' : 'white'}` }}
             />
             <Menu.Item
               name="ostar"
               onClick={this.handleItemClick}
-              style={{ background: `${activeItem === 'ostar' ? 'blue' : 'white'}` }}
+              style={{ background: `${activeItem === 'ostar' ? '#e5e5e5' : 'white'}` }}
             />
           </Menu>
         </Grid.Column>
 
         <Grid.Column stretched width={mobile ? 11 : 12}>
-          <Segment style={{ background: bg }}>
+          <Segment style={{ background: '#e5e5e5aa' }}>
             <Card.Group itemsPerRow={mobile ? 1 : 3}>
               {products.map((product, idx) => (
                 <ProductCard
