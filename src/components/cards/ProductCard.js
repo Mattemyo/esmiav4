@@ -13,7 +13,6 @@ const mobile = window.innerWidth < 600;
 const modalStyle = {
   top: 300,
   width: mobile ? '80%' : '50%',
-  left: '25%',
   position: 'absolute',
   opacity: 0
 };
@@ -26,7 +25,7 @@ class ProductCard extends Component {
       style: {
         top: 300,
         width: mobile ? '80%' : '50%',
-        left: '25%',
+        left: '4.9em',
         position: 'absolute',
         opacity: 0
       }

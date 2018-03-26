@@ -31,7 +31,7 @@ const Homepage = () => (
 
     <MainHeading
       bigHeader={'Välkommen till Esmia HB'}
-      smallHeader={'Spansk deli i Sverige'}
+      smallHeader={'Denna sida är klar i april!'}
       buttonText={'Se produkter'}
       link={'/products'}
     />
@@ -73,8 +73,8 @@ const Homepage = () => (
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign="center">
-           <Button as={NavLink} to="/products" size="huge">
-             Kontakta oss
+            <Button as={NavLink} to="/products" size="huge">
+              Kontakta oss
             </Button>
           </Grid.Column>
         </Grid.Row>
@@ -107,11 +107,8 @@ const Homepage = () => (
           Det bästa urvalet från Medelhavet
         </Header>
         <p style={{ fontSize: '1.33em' }}>
-          Bacon ipsum dolor amet ribeye kevin pancetta capicola strip steak venison. Picanha ribeye
-          porchetta shoulder spare ribs tail chuck. Salami leberkas chicken kielbasa short ribs,
-          capicola pancetta. Turducken pastrami alcatra capicola frankfurter ground round ball tip
-          pork loin tail jerky landjaeger doner fatback. Burgdoggen tail strip steak, frankfurter
-          pancetta ball tip fatback venison porchetta cow.
+          Vi väljer noga ut de bästa producenterna i Spanien. Efter mer än 20 år i branchen kan vi
+          garantera att produkterna håller hög kvalitet och är mycket smakrika.
         </p>
         <Button as="a" size="large">
           Läs mer
@@ -128,6 +125,10 @@ const Homepage = () => (
           Har du frågor eller funderingar?
         </Header>
         <p style={{ fontSize: '1.33em' }}>Maila eller ring till:</p>
+        <p>
+          <a href="mailto:norberto@esmia.se">norberto@esmia.se</a>
+        </p>
+        <p>0701178451</p>
         {/* <Button as="a" size="large">
           Ta mig dit
         </Button> */}
