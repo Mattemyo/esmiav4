@@ -128,7 +128,7 @@ const Homepage = () => (
         <p>
           <a href="mailto:norberto@esmia.se">norberto@esmia.se</a>
         </p>
-        <p>0701178451</p>
+        <p>0707223191</p>
         {/* <Button as="a" size="large">
           Ta mig dit
         </Button> */}
