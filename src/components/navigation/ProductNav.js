@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Menu, Segment, Card } from 'semantic-ui-react';
 import FlipMove from 'react-flip-move';
 import ProductCard from '../cards/ProductCard';
-import products from '../../utils/db';
-import Sticky from 'semantic-ui-react/dist/commonjs/modules/Sticky/Sticky';
+import products from '../../data/db';
 
 export default class ProductNav extends Component {
   state = {

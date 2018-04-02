@@ -19,7 +19,7 @@ import MainHeading from '../headings/MainHeading';
 import Footer from '../Footer';
 import maricoPaella2 from '../../images/maricoPaella2.jpg';
 import PageBackground from '../backgrounds/PageBackground';
-
+import GotebTapas from '../../images/GotebTapas.jpg';
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
  * It can be more complicated, but you can create really flexible markup.
@@ -62,13 +62,10 @@ const Homepage = () => (
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
-            <Image
-              bordered
-              rounded
-              size="large"
-              src="/assets/images/wireframe/white-image.png"
-              alt="fin bild"
-            />
+            <Image bordered rounded size="large" src={GotebTapas} alt="fin bild" />
+            <div style={{ width: '80%', margin: '0 auto' }} className="ui bottom attached label">
+              CSS
+            </div>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>

@@ -4,6 +4,11 @@ import korvis from '../images/korvis.jpg';
 import korv from '../images/korv.jpg';
 import ost from '../images/ost.jpg';
 import mahon from '../images/mahon.jpg';
+import altoBello from '../images/altoBello.jpg';
+import mancebo from '../images/mancebo.jpg';
+import paellaValenciana from '../images/paellaValenciana.JPG';
+import mariscoPaella from '../images/mariscoPaella.JPG';
+import idiazabal from '../images/idiazabal.jpg';
 
 const products = [
   // {
@@ -61,6 +66,7 @@ const products = [
     description:
       'Chorizo färsk 70 gram. Paprikakorv för Bbq och stekning. Chorizo casero lagrad 350 gram. Picante smak som är mild eftersom det innehåller söt paprika & bitter paprikapulver. Perfekt till grytan eller som kallskuret. Serveras med tomatsås, lök, potatis.6,5kg per kolli.'
   },
+  // KOLONIAL
   {
     type: 'kolonial',
     name: 'Olivolja',
@@ -101,6 +107,7 @@ const products = [
     description:
       'Serranoskinka skivad 500gr. Lätt att dra varje skiva med mellanlägg. Skinkan från grishona med 11 månaders lufttorkning. Linda den med dadlar, runt getost, servera med oliver. Förpackning: 5 st x 500g = 2,5kg/kolli.'
   },
+  // OSTAR
   {
     type: 'ostar',
     name: 'Manchego fårost 6 mån',
@@ -120,7 +127,7 @@ const products = [
   {
     type: 'ostar',
     name: 'Mahon komjölksost mellanl.',
-    image: 'mahon',
+    image: mahon,
     price: '175kr/kg',
     description:
       'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
@@ -128,7 +135,7 @@ const products = [
   {
     type: 'ostar',
     name: 'Idiazabal',
-    image: 'idiazabal',
+    image: idiazabal,
     price: '175kr/kg',
     description:
       'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
@@ -136,7 +143,7 @@ const products = [
   {
     type: 'ostar',
     name: 'Mancebo',
-    image: 'mancebo',
+    image: mancebo,
     price: '155kr/kg',
     description:
       'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
@@ -144,15 +151,16 @@ const products = [
   {
     type: 'ostar',
     name: 'Manchego fårost 6 mån',
-    image: 'altoBello',
+    image: altoBello,
     price: '195kr/kg',
     description:
       'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
   },
+  // PAELLA
   {
     type: 'paella',
     name: 'Paella från Valencia',
-    image: 'paellaValenciana',
+    image: paellaValenciana,
     price: '330kr/kg',
     description:
       'Ibericoskinka är lufttorkad i 30 månader. Gris av svart ras. Den avlas i naturen med ekollon och andra örter. 6 månader innan slakt utfodras grisarna med vanligt foder. 7,5kg /st.'
@@ -161,7 +169,7 @@ const products = [
   {
     type: 'paella',
     name: 'Skaldjurspaella',
-    image: 'mariscoPaella',
+    image: mariscoPaella,
     price: '175kr/kg',
     description: 'Paella gjord på skaldjur'
   },
