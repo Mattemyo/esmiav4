@@ -5,13 +5,13 @@ import 'semantic-ui-css/semantic.min.css';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import 'tachyons';
 
 ReactDOM.render(
   <BrowserRouter>
     <Route component={App} />
   </BrowserRouter>,
   document.getElementById('root')
-  
 );
 
 registerServiceWorker();

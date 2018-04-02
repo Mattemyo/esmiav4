@@ -24,7 +24,6 @@ import GotebTapas from '../../images/GotebTapas.jpg';
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
  * It can be more complicated, but you can create really flexible markup.
  */
-
 const Homepage = () => (
   <div className="page" style={{ zIndex: 60 }}>
     <PageBackground image={maricoPaella2} />
@@ -61,10 +60,14 @@ const Homepage = () => (
               Paella? Vare sig ni är 10 eller 100 personer så fixar vi det.
             </p>
           </Grid.Column>
-          <Grid.Column floated="right" width={6}>
-            <Image bordered rounded size="large" src={GotebTapas} alt="fin bild" />
-            <div style={{ width: '80%', margin: '0 auto' }} className="ui bottom attached label">
-              CSS
+          {/* Spacer */}
+          <Grid.Column width={2} />
+          <Grid.Column width={6}>
+            <div>
+              <Image className="w-90 ml3" bordered rounded src={GotebTapas} alt="fin bild" />
+              <div className="w-90 ml3 mt0 ui bottom attached tc w-50">
+                Tapas hos kund i Göteborg
+              </div>
             </div>
           </Grid.Column>
         </Grid.Row>
@@ -104,10 +107,11 @@ const Homepage = () => (
           Det bästa urvalet från Medelhavet
         </Header>
         <p style={{ fontSize: '1.33em' }}>
-          Vi väljer noga ut de bästa producenterna i Spanien. Efter mer än 20 år i branchen kan vi
-          garantera att produkterna håller hög kvalitet och är mycket smakrika.
+          Vi erbjuder spansk mat i alla dess former. Paella, chorizo, skinka, ost, you name it!
+          Produkterna väljs noga ut från de bästa producenterna i Spanien. Efter mer än 20 år i
+          branchen kan vi garantera att produkterna håller hög kvalitet och är mycket smakrika.
         </p>
-        <Button as="a" size="large">
+        <Button as={NavLink} to="/about" size="large">
           Läs mer
         </Button>
         <Divider
@@ -116,7 +120,7 @@ const Homepage = () => (
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a href="#">Mer info</a>
+          <a href="#">Kontakta oss</a>
         </Divider>
         <Header as="h3" style={{ fontSize: '2em' }}>
           Har du frågor eller funderingar?

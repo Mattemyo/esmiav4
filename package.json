@@ -8,6 +8,7 @@
     "firebase-tools": "^3.17.6",
     "lodash": "^4.17.5",
     "react": "^16.0.0",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.0.0",
     "react-flip-move": "^3.0.1",
     "react-move": "^2.7.0",
