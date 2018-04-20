@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Header, Button, Icon, Segment, Image } from 'semantic-ui-react';
+import {
+  Container,
+  Header,
+  Button,
+  Icon,
+  Segment,
+  Image
+} from 'semantic-ui-react';
 import { withRouter } from 'react-router';
 
 /* Heads up! MainHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -28,6 +35,7 @@ const MainHeading = ({ bigHeader, smallHeader, buttonText, link }) => {
           style={{
             fontSize: mobile ? '2em' : '4em',
             fontWeight: 'normal',
+            textShadow: '2px 2px black',
             marginBottom: 0,
             marginTop: mobile ? '1.5em' : '3em'
           }}
@@ -37,6 +45,7 @@ const MainHeading = ({ bigHeader, smallHeader, buttonText, link }) => {
           content={smallHeader}
           inverted
           style={{
+            textShadow: '2px 2px black',
             fontSize: mobile ? '1.5em' : '1.7em',
             fontWeight: 'normal',
             marginTop: mobile ? '0.5em' : '1.5em'

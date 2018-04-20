@@ -23,17 +23,23 @@ class ProductCard extends Component {
     this.state = {
       modalDidMount: false,
       style: {
-        top: 300,
+        marginTop: '300px',
         width: mobile ? '80%' : '50%',
-        left: '4.9em',
         position: 'absolute',
+        marginLeft: mobile ? '7%' : '15%',
         opacity: 0
       }
     };
   }
 
   onModalMount = () => {
-    this.setState({ style: { ...this.state.style, opacity: 1, transition: 'all 0.3s ease-out' } });
+    this.setState({
+      style: {
+        ...this.state.style,
+        opacity: 1,
+        transition: 'all 0.3s ease-out'
+      }
+    });
   };
 
   get cardStyle() {
@@ -81,6 +87,7 @@ class ProductCard extends Component {
             extra={price}
             size="small"
             style={{
+              margin: mobile ? '0px auto' : '',
               opacity: 0,
               boxShadow: '2px 2px 8px',
               cursor: 'pointer',

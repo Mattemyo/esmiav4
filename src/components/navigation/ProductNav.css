@@ -1,0 +1,36 @@
+div.nav {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) 10px;
+  grid-gap: 16px;
+  margin-top: 90px;
+}
+div.nav > *:first-of-type {
+  grid-column: 1 / 2;
+}
+
+div.product-list {
+  grid-column: 2 / -2;
+  padding: 20px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+  grid-template-rows: 1fr;
+  border-radius: 3px;
+}
+
+div.product-list > *:first-of-type {
+  grid-column: 1/2;
+}
+
+@media screen and (max-width: 800px) {
+  div.nav > *:first-of-type {
+    grid-column: 1/-2;
+    min-width: 100%;
+  }
+  div.nav > *:last-of-type {
+    grid-column: 1 / -2;
+  }
+
+  div.grid.product-list > * {
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 3fr));
+    margin: 0 auto;
+  }
+}

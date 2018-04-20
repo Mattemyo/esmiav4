@@ -13,3 +13,7 @@ body {
   position: absolute;
   width: 100vw;
 }
+
+div.grid {
+  display: grid;
+}
