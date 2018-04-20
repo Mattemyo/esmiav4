@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
-import { Responsive, Sidebar, Segment, Menu, Icon, Container } from 'semantic-ui-react';
+import {
+  Responsive,
+  Sidebar,
+  Segment,
+  Menu,
+  Icon,
+  Container
+} from 'semantic-ui-react';
 
 class MobileTopNav extends Component {
   state = {
@@ -26,12 +33,20 @@ class MobileTopNav extends Component {
     const menuStyle = {
       width: '100vw',
       textAlign: 'left',
-      transform: `scaleX(${menuOpened ? 1 : 0})`
+      transform: `scaleY(${menuOpened ? 1 : 0}) translateY(${
+        menuOpened ? 0 : '-50px'
+      })`,
+      opacity: menuOpened ? 1 : 0
     };
 
     return (
       <div style={{ position: 'fixed', zIndex: 80, minWidth: '100vw' }}>
-        <Segment inverted textAlign="center" style={{ padding: '0em', maxHeight: '45px' }} vertical>
+        <Segment
+          inverted
+          textAlign="center"
+          style={{ padding: '0em', maxHeight: '45px' }}
+          vertical
+        >
           <Container>
             <Menu inverted pointing secondary size="large">
               <Menu.Item position="right" onClick={handleToggle}>
