@@ -59,15 +59,22 @@ export default class ProductNav extends Component {
               background: `${activeItem === 'ostar' ? '#e5e5e5' : 'white'}`
             }}
           />
+          <Menu.Item
+            name="paella"
+            onClick={this.handleItemClick}
+            style={{
+              background: `${activeItem === 'paella' ? '#e5e5e5' : 'white'}`
+            }}
+          />
         </Menu>
 
         <div
           className="grid product-list"
           style={{
-            background: '#e5e5e5aa'
+            background: '#e5e5e5aa',
+            minHeight: '50vw'
           }}
         >
-
           {products.map((product, idx) => (
             <ProductCard
               image={product.image}

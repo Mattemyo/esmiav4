@@ -110,35 +110,48 @@ const products = [
   // OSTAR
   {
     type: 'ostar',
-    name: 'Manchego fårost 6 mån',
-    image: ost,
-    price: '195kr/kg',
+    name: 'Manchego Altobello vak. 3,3 kg / st',
+    image: altoBello,
+    price: '195kr / kg',
+    amount: '2 st / låda',
     description:
-      'Fårost med ursprungsbeteckning Altobello. Skär upp den i trianglar, fyrkantiga pinnar eller tärningar. Fikon, druvor, passionsfrukt, guayaba och kvittens gelé kan passa bra till manchego. Förpackning: 3,5 kg per st, 2 stycken i kolli. = 7kg.'
+      'Lagrad 1 år med oätbart skal. Serveras gärna i trianglar med mandlar'
   },
   {
     type: 'ostar',
-    name: 'Getost färsk, 1 mån utan skal',
+    name: 'Getost färsk vak. 1,1 kg / st',
     image: ost,
+    amount: '6 st / låda',
     price: '155kr/kg',
     description:
-      'Getost färsk med enbart getmjölk 1 månad lagrad. Går att marinera med olivolja, dragon och timjan. Täck den med piquillo paprika och spetsa med en oliv. Linda in den med serranoskinka och värm i salamander. Förpackning: 1 kg/st. 6 st/kolli = 7 kilo.'
+      'lagrad 20 dagar utan skal. Toledo. Tips: Tjocka trianglar med paprike'
   },
   {
     type: 'ostar',
-    name: 'Mahon komjölksost mellanl.',
-    image: mahon,
-    price: '175kr/kg',
+    name: 'Getost lagrad i rödvin vak. 2,5 kg / st',
+    image: ost,
+    price: '170 kr / kg',
+    amount: '2 st / låda',
     description:
-      'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
+      'lagrad 40 dagar med rödvinsskal. Murcia. Tips: Tärningar med ansjovis'
+  },
+  {
+    type: 'ostar',
+    name: 'Mahon komjölksost lagrad 3,4 kg / st',
+    image: mahon,
+    price: '165 kr / kg',
+    amount: '2 st / låda',
+    description:
+      'lagrad 1 mån med orange skal. Menorca. Tips: Tjocka skivor med cocktailtomater'
   },
   {
     type: 'ostar',
     name: 'Idiazabal',
     image: idiazabal,
-    price: '175kr/kg',
+    price: '205 kr / kg',
+    amount: '2 st / låda',
     description:
-      'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
+      'lagrad 6 mån med oätbart skal. Tunna skivor med räkor. Baskien'
   },
   {
     type: 'ostar',
@@ -159,11 +172,11 @@ const products = [
   // PAELLA
   {
     type: 'paella',
-    name: 'Paella från Valencia',
+    name: 'Paella Valenciana',
     image: paellaValenciana,
-    price: '330kr/kg',
+    price: '180 kr / person',
     description:
-      'Ibericoskinka är lufttorkad i 30 månader. Gris av svart ras. Den avlas i naturen med ekollon och andra örter. 6 månader innan slakt utfodras grisarna med vanligt foder. 7,5kg /st.'
+      'Paella baserad på färska råvaror som kyckling, skärbönor och elefantbönor. Serveras med citronklyftor och bröd'
   },
 
   {
