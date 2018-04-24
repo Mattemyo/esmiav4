@@ -9,20 +9,14 @@ import mancebo from '../images/mancebo.jpg';
 import paellaValenciana from '../images/paellaValenciana.JPG';
 import mariscoPaella from '../images/mariscoPaella.JPG';
 import idiazabal from '../images/idiazabal.jpg';
+import tortilla from '../images/tortilla.jpg';
 
 const products = [
-  // {
-  //   name: "Iberico ben, 30 mån",
-  //   image: 'tapasJamon',
-  //   price: "330kr/kg",
-  //   description:
-  //     "Ibericoskinkan är lufttorkad i 30 månader. Gris av svart ras. Den avlas i naturen med ekollon och andra örter. 6 månader innan slakt utfodras grisarna med vanligt foder. 7,5kg /st."
-  // },
   {
     type: 'skinka',
-    name: 'Iberico vac., 30 mån',
+    name: 'Iberico vak., 30 mån',
     image: tjockskinka,
-    price: '550kr/kg',
+    price: '550 kr / kg',
     description:
       'Ibericoskinka 30 månaders lufttorkad. Den svarta grisrasen avlas i naturen med ekollon och örter. Senaste månader äter den vanlig grisföda, recebo. Vikt i vacuumfrp.: 4-5kg /st.'
   },
@@ -30,7 +24,7 @@ const products = [
     type: 'skinka',
     name: 'Serranoskinka reserva 14 mån',
     image: tjockskinka,
-    price: '175kr/kg',
+    price: '175 kr / kg',
     description:
       'Chorizo och salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
   },
@@ -38,7 +32,7 @@ const products = [
     type: 'skinka',
     name: 'Serranoskinka 500g skivad',
     image: tjockskinka,
-    price: '235kr/kg',
+    price: '235 kr / kg',
     description:
       'Serranoskinka skivad 500g. Lätt att dra varje skiva med mellanlägg. Skinkan kommer från grishona med 11 månaders lufttorkning. Serveras med med oliver eller dadlar. Förpackning: 5 st x 500g = 2,5kg/kolli.'
   },
@@ -46,7 +40,7 @@ const products = [
     type: 'skinka',
     name: 'Redondo Iglesias 500g skivad',
     image: redondoIglesias,
-    price: '235kr/kg',
+    price: '235kr / kg',
     description:
       'Serranoskinka skivad 500g. Lätt att dra varje skiva med mellanlägg. Skinkan från grishona med 11 månaders lufttorkning. Linda den med dadlar, runt getjockskinka servera med oliver. Förpackning: 5 st x 500g = 2,5kg/kolli.'
   },
@@ -54,7 +48,7 @@ const products = [
     type: 'chorizo',
     name: 'Chorizo och salami Iberico',
     image: korvis,
-    price: '175kr/kg',
+    price: '175 kr / kg',
     description:
       'Chorizo och salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
   },
@@ -62,7 +56,7 @@ const products = [
     type: 'chorizo',
     name: 'Chorizo färsk grill',
     image: korv,
-    price: '89kr/kg',
+    price: '89 kr / kg',
     description:
       'Chorizo färsk 70 gram. Paprikakorv för Bbq och stekning. Chorizo casero lagrad 350 gram. Picante smak som är mild eftersom det innehåller söt paprika & bitter paprikapulver. Perfekt till grytan eller som kallskuret. Serveras med tomatsås, lök, potatis.6,5kg per kolli.'
   },
@@ -71,7 +65,7 @@ const products = [
     type: 'kolonial',
     name: 'Olivolja',
     image: korv,
-    price: '330kr/kg',
+    price: '330 kr / kg',
     description:
       'Ibericoskinkan är lufttorkad i 30 månader. Gris av svart ras. Den avlas i naturen med ekollon och andra örter. 6 månader innan slakt utfodras grisarna med vanligt foder. 7,5kg /st.'
   },
@@ -79,7 +73,7 @@ const products = [
     type: 'kolonial',
     name: 'Piquillo Paprika',
     image: korv,
-    price: '450kr/kg',
+    price: '450 kr / kg',
     description:
       'Ibericoskinka 30 månaders lufttorkad. Den svarta grisrasen avlas i naturen med ekollon och örter. Senaste månader äter den vanlig grisföda, recebo. Vikt i vacuumfrp.: 4-5kg /st.'
   },
@@ -87,7 +81,7 @@ const products = [
     type: 'kolonial',
     name: 'Chorizo och Salami Iberico',
     image: korv,
-    price: '175kr/kg',
+    price: '175 kr / kg',
     description:
       'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
   },
@@ -95,7 +89,7 @@ const products = [
     type: 'kolonial',
     name: 'Serranoskinka reserva 14 mån',
     image: korv,
-    price: '160kr/kg',
+    price: '160 kr / kg',
     description:
       'Chorizo och salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
   },
@@ -103,7 +97,7 @@ const products = [
     type: 'kolonial',
     name: 'Serranoskinka 500g skivad',
     image: korv,
-    price: '235kr/kg',
+    price: '235 kr / kg',
     description:
       'Serranoskinka skivad 500gr. Lätt att dra varje skiva med mellanlägg. Skinkan från grishona med 11 månaders lufttorkning. Linda den med dadlar, runt getost, servera med oliver. Förpackning: 5 st x 500g = 2,5kg/kolli.'
   },
@@ -112,7 +106,7 @@ const products = [
     type: 'ostar',
     name: 'Manchego Altobello vak. 3,3 kg / st',
     image: altoBello,
-    price: '195kr / kg',
+    price: '195 kr / kg',
     amount: '2 st / låda',
     description:
       'Lagrad 1 år med oätbart skal. Serveras gärna i trianglar med mandlar'
@@ -122,7 +116,7 @@ const products = [
     name: 'Getost färsk vak. 1,1 kg / st',
     image: ost,
     amount: '6 st / låda',
-    price: '155kr/kg',
+    price: '155kr / kg',
     description:
       'lagrad 20 dagar utan skal. Toledo. Tips: Tjocka trianglar med paprike'
   },
@@ -157,7 +151,7 @@ const products = [
     type: 'ostar',
     name: 'Mancebo',
     image: mancebo,
-    price: '155kr/kg',
+    price: '155 kr / kg',
     description:
       'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
   },
@@ -165,13 +159,13 @@ const products = [
     type: 'ostar',
     name: 'Manchego fårost 6 mån',
     image: altoBello,
-    price: '195kr/kg',
+    price: '195 kr / kg',
     description:
       'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
   },
   // PAELLA
   {
-    type: 'paella',
+    type: 'catering',
     name: 'Paella Valenciana',
     image: paellaValenciana,
     price: '180 kr / person',
@@ -180,27 +174,26 @@ const products = [
   },
 
   {
-    type: 'paella',
-    name: 'Skaldjurspaella',
+    type: 'catering',
+    name: 'Paella med skaldjur',
     image: mariscoPaella,
-    price: '175kr/kg',
+    price: '',
     description: 'Paella gjord på skaldjur'
   },
   {
-    type: 'paella',
+    type: 'catering',
     name: 'Tilltugg - Spansk Tortilla',
-    image: 'paellaSmiley',
+    image: tortilla,
     price: '',
-    description:
-      'Ibericoskinka 30 månaders lufttorkad. Den svarta grisrasen avlas i naturen med ekollon och örter. Senaste månader äter den vanlig grisföda, recebo. Vikt i vacuumfrp.: 4-5kg /st.'
+    description: ''
   },
-  {
-    type: 'paella',
-    name: 'Serranoskinka 500g skivad',
-    image: 'paellaspecialistenbgr',
-    price: '',
-    description: 'Ni är även välkomna att hyra utrustning för att laga paella'
-  }
+  // {
+  //   type: 'catering',
+  //   name: 'Serranoskinka 500g skivad',
+  //   image: 'paellaspecialistenbgr',
+  //   price: '',
+  //   description: 'Ni är även välkomna att hyra utrustning för att laga paella'
+  // }
 ];
 
 export default products;

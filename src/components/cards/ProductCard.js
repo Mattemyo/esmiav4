@@ -23,10 +23,10 @@ class ProductCard extends Component {
     this.state = {
       modalDidMount: false,
       style: {
-        marginTop: '300px',
+        marginTop: mobile ? '30px' : '300px',
         width: mobile ? '80%' : '50%',
         position: 'absolute',
-        marginLeft: mobile ? '7%' : '15%',
+        marginLeft: mobile ? '7%' : '25%',
         opacity: 0
       }
     };

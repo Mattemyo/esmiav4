@@ -24,7 +24,7 @@ const bounceTransition = {
   },
   // leave in a transparent, downscaleXd state
   atLeave: {
-    opacity: 0,
+    opacity: -1,
     // scaleX: 0,
     delay: 0
   },

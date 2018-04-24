@@ -55,7 +55,7 @@ class Homepage extends Component {
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   Alla våra produkter har ursprung i Spanien. Vi erbjuder bland
-                  annat Paella, chorizo och skinka till konkurrenskraftiga
+                  annat catering, chorizo och skinka till konkurrenskraftiga
                   priser.
                 </p>
                 <Header as="h3" style={{ fontSize: '2em' }}>
@@ -64,7 +64,7 @@ class Homepage extends Component {
 
                 <p style={{ fontSize: '1.33em' }}>
                   Vill ni fira er födelsedag med medelhavsmat? Eller varför inte
-                  fira studenten med Paella? Vare sig ni är 10 eller 100
+                  fira studenten med catering? Vare sig ni är 10 eller 100
                   personer så fixar vi det.
                 </p>
               </Grid.Column>
@@ -87,7 +87,7 @@ class Homepage extends Component {
             </Grid.Row>
             <Grid.Row>
               <Grid.Column textAlign="center">
-                <Button as={NavLink} to="/products" size="huge">
+                <Button as={NavLink} to="/about" size="huge">
                   Kontakta oss
                 </Button>
               </Grid.Column>
@@ -121,7 +121,7 @@ class Homepage extends Component {
               Från det fantastiska Medelhavet
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              Vi erbjuder spansk mat i alla dess former. Paella, chorizo,
+              Vi erbjuder spansk mat i alla dess former. catering, chorizo,
               skinka, ost, you name it! Efter mer än 20 år i branchen kan vi
               garantera att produkterna håller hög kvalitet och är mycket
               smakrika.

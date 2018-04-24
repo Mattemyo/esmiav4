@@ -60,10 +60,10 @@ export default class ProductNav extends Component {
             }}
           />
           <Menu.Item
-            name="paella"
+            name="catering"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'paella' ? '#e5e5e5' : 'white'}`
+              background: `${activeItem === 'catering' ? '#e5e5e5' : 'white'}`
             }}
           />
         </Menu>
