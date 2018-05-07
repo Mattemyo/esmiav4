@@ -35,7 +35,7 @@ class Homepage extends Component {
         <PageBackground image={maricoPaella2} />
 
         <MainHeading
-          bigHeader={'Välkommen till Esmia HB'}
+          bigHeader={'Esmia HB'}
           smallHeader={'Spansk deli i Sverige'}
           buttonText={'Se produkter'}
           link={'/products'}

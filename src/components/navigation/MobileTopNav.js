@@ -40,15 +40,22 @@ class MobileTopNav extends Component {
     };
 
     return (
-      <div style={{ position: 'fixed', zIndex: 80, minWidth: '100vw' }}>
+      <div
+        style={{
+          position: 'fixed',
+          zIndex: 80,
+          minWidth: '100vw',
+
+          background: '#c60b1e'
+        }}
+      >
         <Segment
-          inverted
           textAlign="center"
           style={{ padding: '0em', maxHeight: '45px' }}
           vertical
         >
           <Container>
-            <Menu inverted pointing secondary size="large">
+            <Menu pointing secondary size="large">
               <Menu.Item position="right" onClick={handleToggle}>
                 <Icon name={`${menuOpened ? 'close' : 'sidebar'}`} />
               </Menu.Item>
@@ -60,9 +67,9 @@ class MobileTopNav extends Component {
               ...menuStyle,
               position: 'relative',
               top: -20,
-              transition: 'all 0.2s ease-out 0.2s'
+              transition: 'all 0.2s ease-out 0.2s',
+              background: '#c60b1e'
             }}
-            inverted
             vertical
             width={16}
           >

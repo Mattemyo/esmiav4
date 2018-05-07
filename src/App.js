@@ -13,11 +13,13 @@ import ResponsiveContainer from './components/ResponsiveContainer';
 const App = () => (
   <ResponsiveContainer>
     <CloseAndOpen>
-      <Route exact path="/" render={() => <Redirect to="/home" />} />
+      <Route exact path="/" component={HomePage} />
       <Route exact path="/home" component={HomePage} />
       <Route exact path="/products" component={ProductsPage} />
       <Route exact path="/about" component={AboutPage} />
       <Route exact path="/contact" component={ContactPage} />
+      {/* TODO: create withRedirectMessage */}
+      <Route component={HomePage} />
     </CloseAndOpen>
   </ResponsiveContainer>
 );

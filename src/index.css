@@ -17,3 +17,7 @@ body {
 div.grid {
   display: grid;
 }
+
+div.active.item {
+  border-bottom-color: #ffc400 !important;
+}
