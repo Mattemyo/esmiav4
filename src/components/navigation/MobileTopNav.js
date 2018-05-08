@@ -57,7 +57,12 @@ class MobileTopNav extends Component {
           <Container>
             <Menu pointing secondary size="large">
               <Menu.Item position="right" onClick={handleToggle}>
-                <Icon name={`${menuOpened ? 'close' : 'sidebar'}`} />
+                <Icon
+                  style={{
+                    color: 'yellow'
+                  }}
+                  name={`${menuOpened ? 'close' : 'sidebar'}`}
+                />
               </Menu.Item>
             </Menu>
           </Container>
@@ -74,6 +79,9 @@ class MobileTopNav extends Component {
             width={16}
           >
             <Menu.Item
+              style={{
+                color: 'yellow'
+              }}
               onClick={handleToggle}
               as={NavLink}
               to="/home"
@@ -83,6 +91,9 @@ class MobileTopNav extends Component {
             </Menu.Item>
 
             <Menu.Item
+              style={{
+                color: 'yellow'
+              }}
               onClick={handleToggle}
               as={NavLink}
               to="/products"
@@ -92,6 +103,9 @@ class MobileTopNav extends Component {
             </Menu.Item>
 
             <Menu.Item
+              style={{
+                color: 'yellow'
+              }}
               onClick={handleToggle}
               as={NavLink}
               to="/about"
@@ -101,6 +115,9 @@ class MobileTopNav extends Component {
             </Menu.Item>
 
             <Menu.Item
+              style={{
+                color: 'yellow'
+              }}
               onClick={handleToggle}
               as={NavLink}
               to="/contact"

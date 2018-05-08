@@ -7,6 +7,7 @@
     "axios": "^0.18.0",
     "firebase-tools": "^3.17.6",
     "lodash": "^4.17.5",
+    "polyfill-io-feature-detection": "^1.1.14",
     "react": "^16.0.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.0.0",

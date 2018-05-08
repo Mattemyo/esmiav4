@@ -6438,6 +6438,10 @@ pluralize@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
 
+polyfill-io-feature-detection@^1.1.14:
+  version "1.1.14"
+  resolved "https://registry.yarnpkg.com/polyfill-io-feature-detection/-/polyfill-io-feature-detection-1.1.14.tgz#b3381f847847c65816642cf39c80189e4c86af74"
+
 portfinder@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-0.4.0.tgz#a3ffadffafe4fb98e0601a85eda27c27ce84ca1e"
