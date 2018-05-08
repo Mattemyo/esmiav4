@@ -35,35 +35,35 @@ export default class ProductNav extends Component {
             name="skinka"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'skinka' ? '#e5e5e5' : 'white'}`
+              background: `${activeItem === 'skinka' ? 'red' : 'white'}`
             }}
           />
           <Menu.Item
             name="chorizo"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'chorizo' ? '#e5e5e5' : 'white'}`
+              background: `${activeItem === 'chorizo' ? 'red' : 'white'}`
             }}
           />
           <Menu.Item
             name="kolonial"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'kolonial' ? '#e5e5e5' : 'white'}`
+              background: `${activeItem === 'kolonial' ? 'red' : 'white'}`
             }}
           />
           <Menu.Item
             name="ostar"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'ostar' ? '#e5e5e5' : 'white'}`
+              background: `${activeItem === 'ostar' ? 'red' : 'white'}`
             }}
           />
           <Menu.Item
             name="catering"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'catering' ? '#e5e5e5' : 'white'}`
+              background: `${activeItem === 'catering' ? 'red' : 'white'}`
             }}
           />
         </Menu>
@@ -71,8 +71,9 @@ export default class ProductNav extends Component {
         <div
           className="grid product-list"
           style={{
-            background: '#e5e5e5aa',
-            minHeight: '50vw'
+            background: 'red',
+            minHeight: '50vw',
+            minWidth: '50vw'
           }}
         >
           {products.map((product, idx) => (

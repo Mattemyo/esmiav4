@@ -47,15 +47,21 @@ class ProductCard extends Component {
     if (this.props.activeItem !== this.props.type) {
       return {
         opacity: 0.1,
+        WebkitTransform: 'scaleX(0)',
+        MsTransform: 'scaleX(0)',
         transform: 'scaleX(0)',
         position: 'absolute',
-        transition: `all ${0.2}s`
+        WebkitTransition: 'all 0.2s',
+        OTransition: 'all 0.2s',
+        transition: 'all 0.2s'
       };
     }
 
     // display elements
     return {
       opacity: 0.76,
+      OTransition: `all ${0.2}s ${0.2 + 0.03 * this.props.idx}s`,
+      WebkitTransition: `all ${0.2}s ${0.2 + 0.03 * this.props.idx}s`,
       transition: `all ${0.2}s ${0.2 + 0.03 * this.props.idx}s`
     };
   }
