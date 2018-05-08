@@ -35,35 +35,35 @@ export default class ProductNav extends Component {
             name="skinka"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'skinka' ? 'red' : 'white'}`
+              background: `${activeItem === 'skinka' ? '#c60b1e' : 'white'}`
             }}
           />
           <Menu.Item
             name="chorizo"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'chorizo' ? 'red' : 'white'}`
+              background: `${activeItem === 'chorizo' ? '#c60b1e' : 'white'}`
             }}
           />
           <Menu.Item
             name="kolonial"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'kolonial' ? 'red' : 'white'}`
+              background: `${activeItem === 'kolonial' ? '#c60b1e' : 'white'}`
             }}
           />
           <Menu.Item
             name="ostar"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'ostar' ? 'red' : 'white'}`
+              background: `${activeItem === 'ostar' ? '#c60b1e' : 'white'}`
             }}
           />
           <Menu.Item
             name="catering"
             onClick={this.handleItemClick}
             style={{
-              background: `${activeItem === 'catering' ? 'red' : 'white'}`
+              background: `${activeItem === 'catering' ? '#c60b1e' : 'white'}`
             }}
           />
         </Menu>
@@ -71,7 +71,7 @@ export default class ProductNav extends Component {
         <div
           className="grid product-list"
           style={{
-            background: 'red',
+            background: '#c60b1ee0',
             minHeight: '50vw',
             minWidth: '50vw'
           }}

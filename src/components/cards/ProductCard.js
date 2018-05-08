@@ -59,7 +59,7 @@ class ProductCard extends Component {
 
     // display elements
     return {
-      opacity: 0.76,
+      opacity: 0.95,
       OTransition: `all ${0.2}s ${0.2 + 0.03 * this.props.idx}s`,
       WebkitTransition: `all ${0.2}s ${0.2 + 0.03 * this.props.idx}s`,
       transition: `all ${0.2}s ${0.2 + 0.03 * this.props.idx}s`

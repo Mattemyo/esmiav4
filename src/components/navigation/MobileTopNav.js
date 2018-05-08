@@ -59,7 +59,7 @@ class MobileTopNav extends Component {
               <Menu.Item position="right" onClick={handleToggle}>
                 <Icon
                   style={{
-                    color: 'yellow'
+                    color: '#ffc400'
                   }}
                   name={`${menuOpened ? 'close' : 'sidebar'}`}
                 />
@@ -80,7 +80,7 @@ class MobileTopNav extends Component {
           >
             <Menu.Item
               style={{
-                color: 'yellow'
+                color: '#ffc400'
               }}
               onClick={handleToggle}
               as={NavLink}
@@ -92,7 +92,7 @@ class MobileTopNav extends Component {
 
             <Menu.Item
               style={{
-                color: 'yellow'
+                color: '#ffc400'
               }}
               onClick={handleToggle}
               as={NavLink}
@@ -104,7 +104,7 @@ class MobileTopNav extends Component {
 
             <Menu.Item
               style={{
-                color: 'yellow'
+                color: '#ffc400'
               }}
               onClick={handleToggle}
               as={NavLink}
@@ -116,7 +116,7 @@ class MobileTopNav extends Component {
 
             <Menu.Item
               style={{
-                color: 'yellow'
+                color: '#ffc400'
               }}
               onClick={handleToggle}
               as={NavLink}

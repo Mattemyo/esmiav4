@@ -52,7 +52,12 @@ const MainHeading = ({ bigHeader, smallHeader, buttonText, link }) => {
           }}
         />
         {Boolean(buttonText) && (
-          <Button as={Link} to={link} primary size="huge">
+          <Button as={Link} to={link}
+          style={{
+            color: '#c60b1e',
+            background: '#ffc400'
+          }}
+           size="huge">
             {buttonText}
             <Icon name="right arrow" />
           </Button>
