@@ -82,7 +82,7 @@ class ProductCard extends Component {
     return (
       <Modal
         closeIcon
-        color="blue"
+        color="black"
         style={style}
         onMount={onModalMount}
         trigger={
@@ -94,12 +94,11 @@ class ProductCard extends Component {
             size="small"
             style={{
               margin: mobile ? '0px auto' : '',
-              opacity: 0,
               boxShadow: '2px 2px 8px',
               cursor: 'pointer',
               ...cardStyle
             }}
-            color="blue"
+            color="black"
           />
         }
       >
