@@ -21,16 +21,11 @@ function main() {
   );
 }
 
-//  render(
-//     <BrowserRouter>
-//       <Route component={App} />
-//     </BrowserRouter>,
-//     document.getElementById('root')
-//   );
-
-polyfillLoader({
-  features: 'Promise,es6',
-  onCompleted: main
-});
+window.addEventListener('load', () =>
+  polyfillLoader({
+    features: 'Promise,es6',
+    onCompleted: main
+  })
+);
 
 registerServiceWorker();
