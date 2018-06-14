@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Grid, Menu, Segment, Card } from 'semantic-ui-react';
-import FlipMove from 'react-flip-move';
 import ProductCard from '../cards/ProductCard';
 import products from '../../data/db';
 import './ProductNav.css';

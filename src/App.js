@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect , Switch} from 'react-router-dom';
 import './App.css';
 import SlideSwitch from './components/transitions/SlideSwitch';
 import CloseAndOpen from './components/transitions/CloseAndOpen';
@@ -12,7 +12,7 @@ import ResponsiveContainer from './components/ResponsiveContainer';
 
 const App = () => (
   <ResponsiveContainer>
-    <CloseAndOpen>
+    <Switch>
       <Route exact path="/" component={HomePage} />
       <Route exact path="/home" component={HomePage} />
       <Route exact path="/products" component={ProductsPage} />
@@ -20,7 +20,7 @@ const App = () => (
       <Route exact path="/contact" component={ContactPage} />
       {/* TODO: create withRedirectMessage */}
       <Route component={HomePage} />
-    </CloseAndOpen>
+    </Switch>
   </ResponsiveContainer>
 );
 
