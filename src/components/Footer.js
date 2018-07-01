@@ -2,45 +2,19 @@ import React from 'react';
 import { Segment, Container, Grid, Header, List } from 'semantic-ui-react';
 
 const Footer = () => (
-  <div>
-    <Segment
-      vertical
-      style={{
-        background: '#c60b1e',
-        padding: '5em 0em'
-      }}
-    >
-      <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Om" />
-              <List link inverted>
-                <List.Item as="a">Karta</List.Item>
-                <List.Item as="a">Kontakta oss</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              {/* <Header inverted as="h4" content="Services" /> */}
-              <List link inverted>
-                {/* <List.Item as="a">Lorem</List.Item>
-                <List.Item as="a">Lorem</List.Item> */}
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              {/* <Header as="h4" inverted>
-                Footer Header
-              </Header> */}
-              {/* <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo exercitationem facere
-                rem fuga ipsum, veniam minus nostrum nisi molestiae error vitae aliquid dicta
-                tempora dolor quod quaerat quia nihil at!
-              </p> */}
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Container>
-    </Segment>
+  <div className="ui inverted vertical footer segment" style={{ background: '#c60b1e' }}>
+    <div className="ui center aligned container">
+      <h4 className="ui inverted header">&copy; Copyright 2018 | All rights reserved | Esmia HB</h4>
+      <a style={{ color: '#fff' }} href="https://www.facebook.com/">
+        <i className="fa fa-facebook fa-3x" />
+      </a>
+      <a href="https://twitter.com/">
+        <i className="twitter square icon big" />
+      </a>
+      <a href="https://www.linkedin.com/company/c">
+        <i className="linkedin square icon big" />
+      </a>
+    </div>
   </div>
 );
 

@@ -7,7 +7,14 @@ export default class AboutPage extends Component {
   };
   render() {
     return (
-      <div style={{ paddingTop: 60, background: '#ffe89c', width: '100vw', height: '100vh' }}>
+      <div
+        style={{
+          paddingTop: 60,
+          background: 'rgba(255, 232, 156, 0.29)',
+          width: '100vw',
+          height: '100vh'
+        }}
+      >
         <div style={{ paddingTop: 30, marginLeft: '20%' }}>
           <h1>Om</h1>
           <div style={{ height: 0, width: '50%', border: '2px solid #c60b1e' }} />

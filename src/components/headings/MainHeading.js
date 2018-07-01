@@ -1,13 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Container,
-  Header,
-  Button,
-  Icon,
-  Segment,
-  Image
-} from 'semantic-ui-react';
+import { Container, Header, Button, Icon, Segment, Image } from 'semantic-ui-react';
 import { withRouter } from 'react-router';
 
 /* Heads up! MainHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -23,6 +16,7 @@ const MainHeading = ({ bigHeader, smallHeader, buttonText, link }) => {
       style={{
         minHeight: mobile ? 350 : 700,
         paddingTop: `${mobile ? 6 : 2}em`,
+        marginBottom: mobile ? 0 : -90,
         background: '#1B1C1Db0'
       }}
       vertical
@@ -52,12 +46,15 @@ const MainHeading = ({ bigHeader, smallHeader, buttonText, link }) => {
           }}
         />
         {Boolean(buttonText) && (
-          <Button as={Link} to={link}
-          style={{
-            color: '#c60b1e',
-            background: '#ffc400'
-          }}
-           size="huge">
+          <Button
+            as={Link}
+            to={link}
+            style={{
+              color: '#c60b1e',
+              background: '#ffc400'
+            }}
+            size="huge"
+          >
             {buttonText}
             <Icon name="right arrow" />
           </Button>
