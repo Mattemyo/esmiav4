@@ -4,14 +4,11 @@ import { Responsive, Sidebar, Segment, Menu, Icon, Container } from 'semantic-ui
 import MainHeading from '../headings/MainHeading';
 import MobileTopNav from '../navigation/MobileTopNav';
 
-const MobileContainer = ({children}) =>
-    (
-      <Responsive {...Responsive.onlyMobile}>
+const MobileContainer = ({ children }) => (
+  <Responsive {...Responsive.onlyMobile}>
     <MobileTopNav />
+    {children}
+  </Responsive>
+);
 
-            {children}
-        
-      </Responsive>
-    );
-
-export default MobileContainer
+export default MobileContainer;
