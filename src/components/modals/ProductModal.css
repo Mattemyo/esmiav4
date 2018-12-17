@@ -1,0 +1,36 @@
+.cover-all {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  position: absolute;
+  cursor: pointer;
+  top: -60px;
+  left: 0;
+  opacity: 1;
+}
+
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+  z-index: -10;
+  transition: 0.2s opacity ease-out;
+}
+
+.product-modal {
+  position: absolute;
+  z-index: 999;
+  width: 50vw;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.product-modal img {
+  max-width: 50%;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-60px);
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out 0.2s;
+}

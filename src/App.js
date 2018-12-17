@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Route, Redirect , Switch} from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import './App.css';
 import SlideSwitch from './components/transitions/SlideSwitch';
 import CloseAndOpen from './components/transitions/CloseAndOpen';
