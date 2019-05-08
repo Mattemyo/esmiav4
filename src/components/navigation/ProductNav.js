@@ -9,7 +9,12 @@ export default class ProductNav extends Component {
   state = {
     activeItem: 'skinka',
     isModalVisible: false,
-    modalContent: {}
+    modalContent: {},
+    scrollPosition: 0
+  };
+
+  componentDidMount = () => {
+    window.addEventListener('scroll', this.setScroll);
   };
 
   onItemClick = (e, { name }) => {
@@ -17,14 +22,34 @@ export default class ProductNav extends Component {
   };
 
   onToggleModal = (item = {}) => {
-    this.setState(({ isModalVisible }) => ({
-      isModalVisible: !isModalVisible,
-      modalContent: item
-    }));
+    this.setState(({ isModalVisible }) => {
+      if (isModalVisible) {
+        window.removeEventListener('scroll', this.noScroll);
+      } else {
+        window.addEventListener('scroll', this.noScroll);
+      }
+      return {
+        isModalVisible: !isModalVisible,
+        modalContent: item
+      };
+    });
+  };
+
+  setScroll = () => {
+    const { scrollPosition, isModalVisible } = this.state;
+    const { scrollY } = window;
+    if (Math.abs(scrollPosition - scrollY) > 30) {
+      this.setState({ scrollPosition: scrollY });
+    }
+  };
+
+  noScroll = () => {
+    const {scrollPosition} = this.state
+    window.scrollTo(0, scrollPosition);
   };
 
   render() {
-    const { activeItem, isModalVisible, modalContent } = this.state;
+    const { activeItem, isModalVisible, modalContent, scrollPosition } = this.state;
     const mobile = window.innerWidth < 900;
     const bg = '#8c91ab6d';
 
@@ -34,6 +59,7 @@ export default class ProductNav extends Component {
           onToggleModal={this.onToggleModal}
           isVisible={isModalVisible}
           content={modalContent}
+          scrollPosition={scrollPosition}
         />
         <div className="grid nav">
           <Menu

@@ -1,36 +1,49 @@
 .cover-all {
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   background: rgba(0, 0, 0, 0.6);
-  z-index: 999;
+  z-index: 99998;
   position: absolute;
   cursor: pointer;
-  top: -60px;
   left: 0;
   opacity: 1;
+  transition: 0.2s opacity ease-out;
 }
 
 .invisible {
   opacity: 0;
   pointer-events: none;
   z-index: -10;
-  transition: 0.2s opacity ease-out;
 }
 
 .product-modal {
   position: absolute;
-  z-index: 999;
+  z-index: 99999;
   width: 50vw;
   margin: 0 auto;
-  border: 2px solid black;
+  box-shadow: 2px 2px 8px #000;
+  left: 25vw;
+  opacity: 0.96;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  background: #fff;
+  margin-top: 20vh;
+  padding: 14px;
+}
+
+@media only screen and (max-width: 700px) {
+  .product-modal {
+    width: 80vw;
+    left: 10vw;
+    margin-top: 20vh;
+  }
 }
 
 .product-modal img {
-  max-width: 50%;
+  width: 150px;
+  height: auto;
 }
 
 .hidden {
   opacity: 0;
-  transform: translateY(-60px);
-  transition: opacity 0.2s ease-out, transform 0.2s ease-out 0.2s;
+  transform: translateY(30px);
 }

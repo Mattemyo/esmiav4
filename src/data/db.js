@@ -20,50 +20,55 @@ const products = [
     name: 'Serranoskinka skivad 500g',
     image: serrano500,
     price: '115 kr / st',
-    description: "Över 15 månader lufttorkad. Lätt att hantera och servera. Tips: på brödskiva med tomat och olivolja. 6 brickor per låda. Ref.706022"
+    description:
+      'Över 15 månader lufttorkad. Lätt att hantera och servera. Tips: på brödskiva med tomat och olivolja. 6 brickor per låda. Ref.706022'
   },
   {
     type: 'skinka',
     name: 'Serranoskinka 5kg vac. benfri',
     image: serrano5,
     price: '170 kr / kg',
-    description: "Över 15 månader lufttorkad. Utan svål och benfri för att skära direkt i skärmaskin. 2 st per låda. Ref.22120"
+    description:
+      'Över 15 månader lufttorkad. Utan svål och benfri för att skära direkt i skärmaskin. 2 st per låda. Ref.22120'
   },
   {
     type: 'skinka',
     name: 'Chorizo iberico skivad 500g',
     image: tjockskinka,
     price: '115 kr / st',
-    description: 
-    'Lufttorkad 4 månader. Runt 6 centimeter i diamter. Tips: med oliver och rostad paprika. 6 brickor per låda. Ref.703422'
+    description:
+      'Lufttorkad 4 månader. Runt 6 centimeter i diamter. Tips: med oliver och rostad paprika. 6 brickor per låda. Ref.703422'
   },
   {
     type: 'skinka',
-    name: 'Salchicon iberico skivad 500g',
+    name: 'Salchichon iberico skivad 500g',
     image: tjockskinka,
     price: '115 kr / st',
-    description: "Lufttorkad 4 månader. Lösa skivor att placera på fat. Tips: med grillad aubergine. 6 brickor per låda. Ref.703522"
+    description:
+      'Lufttorkad 4 månader. Lösa skivor att placera på fat. Tips: med grillad aubergine. 6 brickor per låda. Ref.703522'
   },
   {
     type: 'skinka',
     name: 'Ibericoskinka skivad 500g',
     image: redondoIglesias,
     price: '370kr / st',
-    description:"Lagrad 30 månader, utan svål. Tips: med rostade mandlar eller oliver. 6 brickor per låda. Ref.701022"
+    description:
+      'Lagrad 30 månader, utan svål. Tips: med rostade mandlar eller oliver. 6 brickor per låda. Ref.701022'
   },
   {
     type: 'skinka',
     name: 'Ibericoskinka vac. benfri 30 mån 5kg',
     image: redondoIglesias,
     price: '640 kr / kg',
-    description:"Utan svål och putsad. Skär direkt i skärmaskin. 1 st per låda. Ref.701022"
+    description: 'Utan svål och putsad. Skär direkt i skärmaskin. 1 st per låda. Ref.701022'
   },
   {
     type: 'skinka',
     name: 'Iberico essenbogskinka skivad 500g',
     image: essenbog500,
     price: '265 kr / st',
-    description:"Lagrad 2 år plattare format. Serveras med soltorkade tomater. 6 brickor per låda. Ref.702122"
+    description:
+      'Lagrad 2 år plattare format. Serveras med soltorkade tomater. 6 brickor per låda. Ref.702122'
   },
   //  chorizoes
   {
@@ -71,21 +76,23 @@ const products = [
     name: 'Chorizo fresco grill 70g',
     image: korvis,
     price: '89 kr / kg',
-    description: "Färsk chorizo korv lagrad 1 vecka. Perfekt till grillen. Serveras genomstekt eftersom den är rå. Baserad på fläskkött, sött paprikapulver, kryddor och salt. 15 paket per låda. Varje paket innehåller 6 korvar (70g per korv)."
+    description:
+      'Färsk chorizo korv lagrad 1 vecka. Perfekt till grillen. Serveras genomstekt eftersom den är rå. Baserad på fläskkött, sött paprikapulver, kryddor och salt. 15 paket per låda. Varje paket innehåller 6 korvar (70g per korv).'
   },
   {
     type: 'chorizo',
     name: 'Chorizo extra cular påläggschorizo 1,8kg',
     image: korv,
     price: '128 kr / kg',
-    description: "Lufttorkad chorizo 1 månad. Hel i bit 1,8kg. Perfekt till smörgåsar. 4 st / låda."
+    description: 'Lufttorkad chorizo 1 månad. Hel i bit 1,8kg. Perfekt till smörgåsar. 4 st / låda.'
   },
   {
     type: 'chorizo',
     name: 'Chorizo casero natural picante 450g',
     image: korv,
     price: '135 kr / kg',
-    description: "U-formad chorizo. Pikant inslag av bittert och sött paprikapulver. Tips: serveras direkt i tjocka skivor eller i gryta. 20 st / låda."
+    description:
+      'U-formad chorizo. Pikant inslag av bittert och sött paprikapulver. Tips: serveras direkt i tjocka skivor eller i gryta. 20 st / låda.'
   },
   // KOLONIAL
   {
@@ -135,8 +142,7 @@ const products = [
     image: altoBello,
     price: '195 kr / kg',
     amount: '2 st / låda',
-    description:
-      'Lagrad 1 år med oätbart skal. Serveras gärna i trianglar med mandlar'
+    description: 'Lagrad 1 år med oätbart skal. Serveras gärna i trianglar med mandlar'
   },
   {
     type: 'ostar',
@@ -144,8 +150,7 @@ const products = [
     image: ost,
     amount: '6 st / låda',
     price: '155kr / kg',
-    description:
-      'lagrad 20 dagar utan skal. Toledo. Tips: Tjocka trianglar med paprike'
+    description: 'lagrad 20 dagar utan skal. Toledo. Tips: Tjocka trianglar med paprike'
   },
   {
     type: 'ostar',
@@ -153,8 +158,7 @@ const products = [
     image: ost,
     price: '170 kr / kg',
     amount: '2 st / låda',
-    description:
-      'lagrad 40 dagar med rödvinsskal. Murcia. Tips: Tärningar med ansjovis'
+    description: 'lagrad 40 dagar med rödvinsskal. Murcia. Tips: Tärningar med ansjovis'
   },
   {
     type: 'ostar',
@@ -162,8 +166,7 @@ const products = [
     image: mahon,
     price: '165 kr / kg',
     amount: '2 st / låda',
-    description:
-      'lagrad 1 mån med orange skal. Menorca. Tips: Tjocka skivor med cocktailtomater'
+    description: 'lagrad 1 mån med orange skal. Menorca. Tips: Tjocka skivor med cocktailtomater'
   },
   {
     type: 'ostar',
@@ -171,8 +174,7 @@ const products = [
     image: idiazabal,
     price: '205 kr / kg',
     amount: '2 st / låda',
-    description:
-      'lagrad 6 mån med oätbart skal. Tunna skivor med räkor. Baskien'
+    description: 'lagrad 6 mån med oätbart skal. Tunna skivor med räkor. Baskien'
   },
   {
     type: 'ostar',
@@ -213,7 +215,7 @@ const products = [
     image: tortilla,
     price: '',
     description: ''
-  },
+  }
   // {
   //   type: 'catering',
   //   name: 'Serranoskinka 500g skivad',

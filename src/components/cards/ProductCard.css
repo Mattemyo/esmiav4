@@ -1,0 +1,8 @@
+div.product-card h1,
+div.product-card .description-wrapper {
+  padding: 7px;
+}
+
+.product-card {
+  background: orange;
+}
