@@ -86,13 +86,13 @@ export default class ProductNav extends Component {
                 background: `${activeItem === 'chorizo' ? '#c60b1e' : 'white'}`
               }}
             />
-            <Menu.Item
+            {/* <Menu.Item
               name="kolonial"
               onClick={this.onItemClick}
               style={{
                 background: `${activeItem === 'kolonial' ? '#c60b1e' : 'white'}`
               }}
-            />
+            /> */}
             <Menu.Item
               name="ostar"
               onClick={this.onItemClick}

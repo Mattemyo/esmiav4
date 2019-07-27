@@ -10,7 +10,10 @@ class ProductCard extends PureComponent {
   render() {
     const { image, name, description, price, idx, activeItem, onClick } = this.props;
     const lastSpace = description.substr(0, 90).lastIndexOf(' ');
-    const descriptionPreview = `${description.substr(0, lastSpace)}...`;
+    const isDescriptionLong = description.length > 90;
+    const descriptionPreview = isDescriptionLong
+      ? `${description.substr(0, lastSpace)}...`
+      : `${description}.`;
 
     return (
       <div
@@ -20,16 +23,18 @@ class ProductCard extends PureComponent {
           boxShadow: '2px 2px 8px',
           cursor: 'pointer',
           background: '#fff',
-          borderRadius: 3
+          borderRadius: 3,
         }}
         className="product-card"
       >
-        <h1>{name}</h1>
+        {name && <h1>{name}</h1>}
         <img src={image} alt={name} />
-        <div className="description-wrapper">
-          <p>{descriptionPreview}</p>
-          <p>{price}</p>
-        </div>
+        {description && (
+          <div className="description-wrapper">
+            <p>{descriptionPreview}</p>
+            <p>{price}</p>
+          </div>
+        )}
       </div>
     );
   }

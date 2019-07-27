@@ -14,6 +14,13 @@ import serrano500 from '../images/serrano500.jpg';
 import essenbog500 from '../images/essenbog500.jpg';
 import serrano5 from '../images/serrano5.jpg';
 
+// catering
+import emptyPaella from '../images/catering/empty-paella.jpg';
+import onlyPaella from '../images/catering/only-paella.jpg';
+import paellaFill from '../images/catering/paella-fill.jpg';
+import paellaMiguel from '../images/catering/paella-miguel.jpg';
+import paellaMoreFill from '../images/catering/paella-more-fill.jpg';
+
 const products = [
   {
     type: 'skinka',
@@ -192,7 +199,7 @@ const products = [
     description:
       'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
   },
-  // PAELLA
+  // PAELLA/Catering
   {
     type: 'catering',
     name: 'Paella Valenciana',
@@ -215,14 +222,42 @@ const products = [
     image: tortilla,
     price: '',
     description: ''
+  },
+  {
+    type: 'catering',
+    // name: 'Paella',
+    image: emptyPaella,
+    price: '',
+    description: ''
+  },
+  {
+    type: 'catering',
+    // name: 'Paella',
+    image: onlyPaella,
+    price: '',
+    description: ''
+  },
+  {
+    type: 'catering',
+    // name: 'Paella',
+    image: paellaFill,
+    price: '',
+    description: ''
+  },
+  {
+    type: 'catering',
+    // name: 'Paella',
+    image: paellaMiguel,
+    price: '',
+    description: ''
+  },
+  {
+    type: 'catering',
+    // name: 'Paella',
+    image: paellaMoreFill,
+    price: '',
+    description: ''
   }
-  // {
-  //   type: 'catering',
-  //   name: 'Serranoskinka 500g skivad',
-  //   image: 'paellaspecialistenbgr',
-  //   price: '',
-  //   description: 'Ni är även välkomna att hyra utrustning för att laga paella'
-  // }
 ];
 
 export default products;

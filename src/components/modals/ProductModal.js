@@ -3,11 +3,16 @@
 import React from 'react';
 import './ProductModal.css';
 
-const ProductModal = ({ isVisible, content, onToggleModal, scrollPosition }) => (
+const ProductModal = ({
+  isVisible,
+  content: { image, name, description, price },
+  onToggleModal,
+  scrollPosition
+}) => (
   <React.Fragment>
     <div
       style={{
-        top: scrollPosition - window.innerHeight * 0.9,
+        top: scrollPosition - window.innerHeight * 0.9
       }}
       onClick={onToggleModal}
       className={`cover-all ${isVisible ? '' : 'invisible'}`}
@@ -19,17 +24,18 @@ const ProductModal = ({ isVisible, content, onToggleModal, scrollPosition }) => 
       }}
       className={`product-modal ${isVisible ? '' : 'hidden'}`}
     >
-      <img
-        style={{ borderRadius: 3, boxShadow: '3px 3px 8px' }}
-        src={content.image}
-        alt={content.name}
-      />
-      <div>
-        <h1>{content.name}</h1>
-        <p>{content.description}</p>
-        <p>Pris: {content.price}</p>
-      </div>
+      <img style={{ borderRadius: 3, boxShadow: '3px 3px 8px' }} src={image} alt={name} />
+      {name &&
+        description &&
+        price && (
+          <div>
+            {name && <h1>{name}</h1>}
+            {description && <p>{description}</p>}
+            {price && <p>Pris: {price}</p>}
+          </div>
+        )}
     </div>
   </React.Fragment>
 );
+
 export default ProductModal;
