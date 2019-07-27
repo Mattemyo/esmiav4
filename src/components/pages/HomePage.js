@@ -5,14 +5,8 @@ import {
   Divider,
   Grid,
   Header,
-  Icon,
   Image,
-  List,
-  Menu,
-  Responsive,
-  Segment,
-  Sidebar,
-  Visibility
+  Segment
 } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 import MainHeading from '../headings/MainHeading';

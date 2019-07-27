@@ -1,14 +1,4 @@
-import React, { Component } from 'react';
-import {
-  Responsive,
-  Visibility,
-  Segment,
-  Button,
-  Menu,
-  Container,
-  Sidebar,
-  Icon
-} from 'semantic-ui-react';
+import React from 'react';
 import DesktopContainer from './containers/DesktopContainer';
 import MobileContainer from './containers/MobileContainer';
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Responsive, Visibility, Segment } from 'semantic-ui-react';
 import DesktopTopNav from '../navigation/DesktopTopNav';
-import Image from 'semantic-ui-react/dist/commonjs/elements/Image/Image';
 
 class DesktopContainer extends Component {
   state = {};

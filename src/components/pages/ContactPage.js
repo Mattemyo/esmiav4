@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Card } from 'semantic-ui-react';
 import Footer from '../Footer';
 
 export default class ContactPage extends Component {

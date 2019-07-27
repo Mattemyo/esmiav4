@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Menu, Segment, Card } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 import ProductCard from '../cards/ProductCard';
 import ProductModal from '../modals/ProductModal';
 import products from '../../data/db';
@@ -36,7 +36,7 @@ export default class ProductNav extends Component {
   };
 
   setScroll = () => {
-    const { scrollPosition, isModalVisible } = this.state;
+    const { scrollPosition, /* isModalVisible */ } = this.state;
     const { scrollY } = window;
     if (Math.abs(scrollPosition - scrollY) > 30) {
       this.setState({ scrollPosition: scrollY });
@@ -50,8 +50,6 @@ export default class ProductNav extends Component {
 
   render() {
     const { activeItem, isModalVisible, modalContent, scrollPosition } = this.state;
-    const mobile = window.innerWidth < 900;
-    const bg = '#8c91ab6d';
 
     return (
       <React.Fragment>

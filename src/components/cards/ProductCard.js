@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { PureComponent } from 'react';
-import { Card, Icon, Modal, Image, Header } from 'semantic-ui-react';
 
 import './ProductCard.css';
 
@@ -8,7 +7,7 @@ const mobile = window.innerWidth < 600;
 
 class ProductCard extends PureComponent {
   render() {
-    const { image, name, description, price, idx, activeItem, onClick } = this.props;
+    const { image, name, description, price, onClick } = this.props;
     const lastSpace = description.substr(0, 90).lastIndexOf(' ');
     const isDescriptionLong = description.length > 90;
     const descriptionPreview = isDescriptionLong

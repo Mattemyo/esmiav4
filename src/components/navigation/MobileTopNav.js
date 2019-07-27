@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
-import { Responsive, Sidebar, Segment, Menu, Icon, Container } from 'semantic-ui-react';
+import { Segment, Menu, Icon, Container } from 'semantic-ui-react';
 
 class MobileTopNav extends Component {
   state = {
     menuOpened: false
-  };
-
-  handlePusherClick = () => {
-    const { menuOpened } = this.state;
-
-    if (menuOpened) this.setState({ menuOpened: false });
   };
 
   handleToggle = () => this.setState({ menuOpened: !this.state.menuOpened });
@@ -18,8 +12,7 @@ class MobileTopNav extends Component {
   render() {
     const {
       state: { menuOpened },
-      props: { children, location },
-      handlePusherClick,
+      props: { location },
       handleToggle
     } = this;
 

@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
-import { Responsive, Sidebar, Segment, Menu, Icon, Container } from 'semantic-ui-react';
-import MainHeading from '../headings/MainHeading';
+import React from 'react';
+import { Responsive } from 'semantic-ui-react';
 import MobileTopNav from '../navigation/MobileTopNav';
 
 const MobileContainer = ({ children }) => (

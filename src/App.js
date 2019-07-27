@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import { Route, Redirect, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
-import SlideSwitch from './components/transitions/SlideSwitch';
-import CloseAndOpen from './components/transitions/CloseAndOpen';
+// import SlideSwitch from './components/transitions/SlideSwitch';
+// import CloseAndOpen from './components/transitions/CloseAndOpen';
 import HomePage from './components/pages/HomePage';
 import AboutPage from './components/pages/AboutPage';
 import ProductsPage from './components/pages/ProductsPage';

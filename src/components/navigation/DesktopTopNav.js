@@ -1,14 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import {
-  Visibility,
-  Segment,
   Menu,
-  Container,
-  Button
+  Container
 } from 'semantic-ui-react';
-import MainHeading from '../headings/MainHeading';
-import { NavLink } from 'react-router-dom';
 
 const styles = {
   link: {

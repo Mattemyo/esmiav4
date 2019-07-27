@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Header, Button, Icon, Segment, Image } from 'semantic-ui-react';
+import { Container, Header, Button, Icon, Segment } from 'semantic-ui-react';
 import { withRouter } from 'react-router';
 
 /* Heads up! MainHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
