@@ -36,7 +36,7 @@ export default class ProductNav extends Component {
   };
 
   setScroll = () => {
-    const { scrollPosition, /* isModalVisible */ } = this.state;
+    const { scrollPosition /* isModalVisible */ } = this.state;
     const { scrollY } = window;
     if (Math.abs(scrollPosition - scrollY) > 30) {
       this.setState({ scrollPosition: scrollY });
@@ -44,7 +44,7 @@ export default class ProductNav extends Component {
   };
 
   noScroll = () => {
-    const {scrollPosition} = this.state
+    const { scrollPosition } = this.state;
     window.scrollTo(0, scrollPosition);
   };
 
@@ -105,35 +105,46 @@ export default class ProductNav extends Component {
                 background: `${activeItem === 'catering' ? '#c60b1e' : 'white'}`
               }}
             />
+            <Menu.Item
+              name="TapasUtrustning"
+              onClick={this.onItemClick}
+              style={{
+                background: `${activeItem === 'TapasUtrustning' ? '#c60b1e' : 'white'}`
+              }}
+            />
           </Menu>
 
-          <div
-            className="grid product-list"
-            style={{
-              background: '#c60b1ee0',
-              minHeight: '50vw',
-              minWidth: '50vw'
-            }}
-          >
-            {products.reduce(
-              (acc, product) =>
-                product.type === activeItem
-                  ? acc.concat(
-                      <ProductCard
-                        image={product.image}
-                        name={product.name}
-                        price={product.price}
-                        type={product.type}
-                        description={product.description}
-                        key={product.name + product.price + product.description}
-                        activeItem={activeItem}
-                        onClick={() => this.onToggleModal(product)}
-                      />
-                    )
-                  : acc,
-              []
-            )}
-          </div>
+          {activeItem === 'TapasUtrustning' ? (
+            <div>Tapas här</div>
+          ) : (
+            <div
+              className="grid product-list"
+              style={{
+                background: '#c60b1ee0',
+                minHeight: '50vw',
+                minWidth: '50vw'
+              }}
+            >
+              {products.reduce(
+                (acc, product) =>
+                  product.type === activeItem
+                    ? acc.concat(
+                        <ProductCard
+                          image={product.image}
+                          name={product.name}
+                          price={product.price}
+                          type={product.type}
+                          description={product.description}
+                          key={product.name + product.price + product.description}
+                          activeItem={activeItem}
+                          onClick={() => this.onToggleModal(product)}
+                        />
+                      )
+                    : acc,
+                []
+              )}
+            </div>
+          )}
         </div>
       </React.Fragment>
     );
