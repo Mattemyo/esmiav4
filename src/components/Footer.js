@@ -8,6 +8,8 @@ const Footer = () => (
       <a
         style={{ color: '#fff' }}
         href="https://www.facebook.com/MeAlegro-DeBerto-198486140220205/"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <i className="fa fa-facebook fa-3x" />
       </a>

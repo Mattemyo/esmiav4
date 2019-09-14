@@ -59,7 +59,7 @@ class Homepage extends Component {
                 <p style={{ fontSize: '1.33em' }}>
                   Vill ni fira er födelsedag med medelhavsmat? Eller varför inte
                   fira studenten med catering? Vare sig ni är 10 eller 100
-                  personer så fixar vi det.
+                  personer fixar vi det.
                 </p>
               </Grid.Column>
               {/* Spacer */}
@@ -129,7 +129,7 @@ class Homepage extends Component {
               horizontal
               style={{ margin: '3em 0em', textTransform: 'uppercase' }}
             >
-              <a href="#">Kontakta oss</a>
+              <a href="/contact">Kontakta oss</a>
             </Divider>
             <Header as="h3" style={{ fontSize: '2em' }}>
               Har du frågor eller funderingar?

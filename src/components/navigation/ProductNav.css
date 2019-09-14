@@ -33,6 +33,23 @@ div.product-list > *:first-of-type {
   grid-column: 1/2;
 }
 
+.tapas-equipment {
+  grid-column: 2/-1;
+  padding: 60px;
+}
+
+.tapas-equipment li {
+  display: flex;
+  align-items: center;
+}
+
+.tapas-equipment li div:first-child {
+  margin-right: 10px;
+}
+.tapas-equipment li div:last-child {
+  margin-left: auto;
+}
+
 @media screen and (max-width: 800px) {
   div.nav > *:first-of-type {
     grid-column: 1/-2;
