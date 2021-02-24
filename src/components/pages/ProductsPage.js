@@ -5,7 +5,6 @@ import PageBackground from '../backgrounds/PageBackground';
 import ProductNav from '../navigation/ProductNav';
 import buffe from '../../images/buffe.jpg';
 import Segment from 'semantic-ui-react/dist/commonjs/elements/Segment/Segment';
-import Container from 'semantic-ui-react/dist/commonjs/elements/Container/Container';
 
 class ProductsPage extends Component {
   componentWillMount = () => {
@@ -25,13 +24,11 @@ class ProductsPage extends Component {
         <Segment
           style={{
             opacity: 0.9,
-            background: 'white'
+            background: 'white',
           }}
           vertical
         >
-          <Container>
-            <ProductNav />
-          </Container>
+          <ProductNav />
         </Segment>
         <Footer />
       </div>

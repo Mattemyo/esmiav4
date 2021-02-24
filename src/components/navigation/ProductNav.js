@@ -52,7 +52,7 @@ export default class ProductNav extends Component {
     const { activeItem, isModalVisible, modalContent, scrollPosition } = this.state;
 
     return (
-      <React.Fragment>
+      <div style={{ padding: '0 30px' }}>
         <ProductModal
           onToggleModal={this.onToggleModal}
           isVisible={isModalVisible}
@@ -189,7 +189,7 @@ export default class ProductNav extends Component {
                 </li>
               </ul>
 
-              <h3>Gasobrännare</h3>
+              <h3>Gasolbrännare</h3>
               <ul>
                 <li>
                   <div>20403</div>
@@ -231,32 +231,26 @@ export default class ProductNav extends Component {
               className="grid product-list"
               style={{
                 background: '#c60b1ee0',
-                minHeight: '50vw',
-                minWidth: '50vw'
+                minHeight: '80vw',
+                minWidth: '80vw'
               }}
             >
-              {products.reduce(
-                (acc, product) =>
-                  product.type === activeItem
-                    ? acc.concat(
+              {products[activeItem].map(
+                (product) =>
                         <ProductCard
                           image={product.image}
                           name={product.name}
                           price={product.price}
                           type={product.type}
                           description={product.description}
-                          key={product.name + product.price + product.description}
                           activeItem={activeItem}
                           onClick={() => this.onToggleModal(product)}
                         />
-                      )
-                    : acc,
-                []
               )}
             </div>
           )}
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }

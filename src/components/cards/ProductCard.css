@@ -1,8 +1,29 @@
-div.product-card h1,
+div.product-card h2,
 div.product-card .description-wrapper {
   padding: 7px;
+  max-width: 300px;
+}
+
+div.product-card h2 {
+  height: 80px;
 }
 
 .product-card {
-  background: orange;
+  overflow: hidden;
+}
+
+.product-card img {
+  max-width: 300px;
+  height: 200px;
+  border-radius: 3px;
+  padding-left: 7px;
+}
+
+img.w-full {
+  max-width: 104% !important;
+  width: 104% !important;
+  height: auto;
+  min-height: 106% !important;
+  padding: 0 !important;
+  object-fit: cover;
 }

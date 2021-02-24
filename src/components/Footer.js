@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => (
   <div className="ui inverted vertical footer segment" style={{ background: '#c60b1e' }}>
     <div className="ui center aligned container">
-      <h4 className="ui inverted header">&copy; Copyright 2019 | All rights reserved | Esmia HB</h4>
+      <h4 className="ui inverted header">&copy; Copyright 2021 | All rights reserved | Esmia HB</h4>
       <a
         style={{ color: '#fff' }}
         href="https://www.facebook.com/MeAlegro-DeBerto-198486140220205/"

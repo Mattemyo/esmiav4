@@ -23,11 +23,12 @@ class ProductCard extends PureComponent {
           cursor: 'pointer',
           background: '#fff',
           borderRadius: 3,
+          opacity: 0.95,
         }}
         className="product-card"
       >
-        {name && <h1>{name}</h1>}
-        <img src={image} alt={name} />
+        {name && <h2>{name}</h2>}
+        {name ? <img src={image} alt={name} /> : <img className="w-full" src={image} alt={name} />}
         {description && (
           <div className="description-wrapper">
             <p>{descriptionPreview}</p>

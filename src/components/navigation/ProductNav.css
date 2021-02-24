@@ -27,15 +27,9 @@ div.product-list {
   border-radius: 3px;
 }
 
-div.product-list > *:first-of-type {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
 .tapas-equipment {
-  grid-column: 2/-1;
   padding: 60px;
+  width: 70vw;
 }
 
 .tapas-equipment li {
