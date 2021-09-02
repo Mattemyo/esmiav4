@@ -4,7 +4,7 @@
   "homepage": "",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "firebase-tools": "^3.17.6",
     "polyfill-io-feature-detection": "^1.1.14",
     "react": "^16.0.0",
