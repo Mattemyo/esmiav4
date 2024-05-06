@@ -226,7 +226,7 @@ export default class ProductNav extends Component {
               </p>
               <a style={{ textDecoration: 'underline' }} href="/tapasutrustning.pdf" target="_blank">Ladda ner PDF här</a>
             </div>
-          ) : (
+          ) : ( 
             <div
               className="grid product-list"
               style={{

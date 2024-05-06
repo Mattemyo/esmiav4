@@ -180,67 +180,92 @@ const products = {
       'Chorizo och Salchichon (salame) Iberico charkuteri. Mycket smak och doft av svart den svarta grisrasen Iberico. Serveras kallskuret på fat med paprika, oliver mm. Förpackning: 1,2kg st. 6 st/kolli = 8kg'
   }],
   // PAELLA/Catering
-  catering: [{
-    name: 'Paella Valenciana',
-    image: paellaValenciana,
-    price: '180 kr / person',
-    description:
-      'Paella baserad på färska råvaror som kyckling, skärbönor och elefantbönor. Serveras med citronklyftor och bröd'
-  },
-  {
-    name: 'Paella med skaldjur',
-    image: mariscoPaella,
-    price: '',
-    description: 'Paella gjord på skaldjur'
-  },
-  {
-    name: 'Tilltugg - Spansk Tortilla',
-    image: tortilla,
-    price: '',
-    description: ''
-  },
+  catering: [
     {
-    // name: 'Paella',
-    image: shellfish,
-    price: '',
-    description: ''
-  },
-  {
-    // name: 'Paella',
-    image: doubleShellfish,
-    price: '',
-    description: ''
-  },
-  {
-    // name: 'Paella',
-    image: emptyPaella,
-    price: '',
-    description: ''
-  },
-  {
-    // name: 'Paella',
-    image: onlyPaella,
-    price: '',
-    description: ''
-  },
-  {
-    // name: 'Paella',
-    image: paellaFill,
-    price: '',
-    description: ''
-  },
-  {
-    // name: 'Paella',
-    image: paellaMiguel,
-    price: '',
-    description: ''
-  },
-  {
-    // name: 'Paella',
-    image: paellaMoreFill,
-    price: '',
-    description: ''
-  }]
+      name: 'Paella de marisco',
+      image: mariscoPaella,
+      price: '295 kr / person',
+      description: 'Enbart skaldjur med stora röda argentinska räkor, räkor, scampi, calamar ringar, blå musslor'
+    },
+    {
+      name: 'Paella med stora räkor och kyckling',
+      image: null,
+      price: '275 kr / person',
+      description: 'Stora räkor, kycklingbröst i bitar, calamar ringar och musslor'
+    },
+    {
+      name: 'Paella mixta',
+      image: null,
+      price: '260 kr / person',
+      description: 'Räkor och kyckling, calamar ringar och musslor'
+    },
+    {
+      name: 'Arroz del senyoret',
+      image: null,
+      price: '250 kr / person',
+      description: 'Scampi utan skal (inga skal eller ben), kycklingbröst i bitar, calamar bitar, musslor utan skal'
+    },
+    {
+      name: 'Paella Valenciana',
+      image: paellaValenciana,
+      price: '240 kr / person',
+      description: '(den ursprungliga) Kyckling, skärbönor, lima bönor, rosmarin.'
+    },
+    {
+      name: 'Pintxos Vascos',
+      image: null,
+      price: '280 kr / person',
+      description: `IBERICO MINI MACKA\nCHISTORRA MED VAKTELÄGG VOILAVENT\nCECINA KOSKINKA MED TRYFFEL MAJONÄS\nBOQUERÓN PÅ TIGRES DE BILBAO TOAST\nSCAMPI PÅ AVOCADO RÖRA TOAST\nTORTILLA POTATIS+GUL LÖK OMELETT\nLAXPASTRAMI JALAPEÑO\nIDIAZÁBAL TARTELINA
+      `
+    },
+    {
+      name: 'Tilltugg - Spansk Tortilla',
+      image: tortilla,
+      price: '',
+      description: ''
+    },
+    {
+      // name: 'Paella',
+      image: shellfish,
+      price: '',
+      description: ''
+    },
+    {
+      // name: 'Paella',
+      image: doubleShellfish,
+      price: '',
+      description: ''
+    },
+    {
+      // name: 'Paella',
+      image: emptyPaella,
+      price: '',
+      description: ''
+    },
+    {
+      // name: 'Paella',
+      image: onlyPaella,
+      price: '',
+      description: ''
+    },
+    {
+      // name: 'Paella',
+      image: paellaFill,
+      price: '',
+      description: ''
+    },
+    {
+      // name: 'Paella',
+      image: paellaMiguel,
+      price: '',
+      description: ''
+    },
+    {
+      // name: 'Paella',
+      image: paellaMoreFill,
+      price: '',
+      description: ''
+    }]
 };
 
 export default products;

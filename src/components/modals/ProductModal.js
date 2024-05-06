@@ -30,7 +30,7 @@ const ProductModal = ({
         price && (
           <div>
             {name && <h1>{name}</h1>}
-            {description && <p>{description}</p>}
+            {description && <p style={{ whiteSpace: 'pre-wrap'}}>{description}</p>}
             {price && <p>Pris: {price}</p>}
           </div>
         )}

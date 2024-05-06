@@ -8,8 +8,8 @@ const mobile = window.innerWidth < 600;
 class ProductCard extends PureComponent {
   render() {
     const { image, name, description, price, onClick } = this.props;
-    const lastSpace = description.substr(0, 90).lastIndexOf(' ');
-    const isDescriptionLong = description.length > 90;
+    const lastSpace = description.substr(0, 200).lastIndexOf(' ');
+    const isDescriptionLong = description.length > 200;
     const descriptionPreview = isDescriptionLong
       ? `${description.substr(0, lastSpace)}...`
       : `${description}.`;
@@ -28,10 +28,10 @@ class ProductCard extends PureComponent {
         className="product-card"
       >
         {name && <h2>{name}</h2>}
-        {name ? <img src={image} alt={name} /> : <img className="w-full" src={image} alt={name} />}
+        {image && (name ? <img src={image} alt={name} /> : <img className="w-full" src={image} alt={name} />)}
         {description && (
           <div className="description-wrapper">
-            <p>{descriptionPreview}</p>
+            {descriptionPreview}
             <p>{price}</p>
           </div>
         )}
